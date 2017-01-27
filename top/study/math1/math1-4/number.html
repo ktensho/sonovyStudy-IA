@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>sonovy | ソノビー　高校数学l 数と集合　実数</title>
+<link href="../../../css/phone.css" rel="stylesheet">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- swiper.jsの導入 -->
+<script src="../../../js/jquery-1.10.2.min.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+  	<div class="curriculum">
+      <!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-1.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">集合</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentWork"><a href="#" class="css_btn_class">問題を解く</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程　end -->
+  <div class="contentsWorks">
+
+
+一次不等式
+
+生活しているうちに、ある数字の大小関係を知りたい場面はありませんか？<br>
+例えば、同じ商品Xを、Aの店とBの店での料金に違いがあるのか否か。<br>
+調べてみた結果、基本的に同じ値段でXを販売していたが、夕方のタイムセールの時間帯だけ、<br>
+Aの方が、Bよりも少し安い値段で販売していることがわかりました。<br>
+
+このようなことを、数式で表すとき、不等式を使って表します。<br>
+今回の例であれば、次のような式ですね。<br>
+
+\(A≦B\)<br>
+
+AとBが等しいときもあるが、AがBよりも小さい時があるので、<br>
+今回は不等号の下にイコールがつく、小なりイコールで表しました。<br>
+
+ここで少しポイントですが「＜」と「≦」について、(または「＞」と「≧」について)<br>
+違いがあることはしっかり認識しておいてください。<br>
+「＜」を使うときは、左辺と右辺が等しくなることはなく、左辺の値が右辺の値よりも小さい時に使います。<br>
+「≦」を使うときは、左辺と右辺が等しくなるときのありますが、左辺の値が右辺の値よりも小さい時もある際に使います。<br>
+小さな違いかもしれませんが、きっちり範囲を考えるときは、この些細な差の認識を間違っていると、<br>
+問題の解答が間違いになることがほとんどです。<br>
+この感覚については、簡単な問題で構わないので類題をいくつか解いてしっかり身につけておきましょう。<br>
+
+それでは、いくつか不等式の性質についてご紹介いたしましょう。<br>
+
+1.a＜bならば、 \(a+c＜b+c\)<br>
+2.a＜bならば、 \(a-c＜b-c\)<br>
+3.a＜b、m＞0ならば \(ma＜mb  \dfrac{a}{m}＜\dfrac{b}{m}\) <br>
+4.a＜b、m＜0ならば \(ma＞mb　\dfrac{a}{m}＞\dfrac{b}{m}\)<br>
+
+１と２はわかりやすいと思います。<br>
+具体的に考えてみましょう。<br>
+
+\(a=2 b=3 c=1\)<br>
+
+このとき、\(a＜b\)は当然ながら成り立っています。<br>
+まずは、\(a+c＜b+c\)　について見ていきましょう。<br>
+
+\(2+1＜3+1\)<br>
+\(3＜4\)<br>
+
+次に、\(a-c＜b-c\)　について見ていきましょう。<br>
+
+\(2-1＜3-1\)<br>
+\(1＜2\)<br>
+
+どちらも特に問題ないですよね？<br>
+両辺同じものを足したり引いたりしても、大小関係は変わりません。<br>
+
+３も特に問題ありませんが、４は要注意です。<br>
+
+では、具体例を１つずつ見ていきましょう。<br>
+
+\(a=3 b=6 m=3\)<br>
+
+ここで、\(ma＜mb  \dfrac{a}{m}＜\dfrac{b}{m}\)　が本当に正しいのか試してみましょう。<br>
+
+\(3×3＜3×6　⇔　9＜18\)<br>
+\(\dfrac{3}{3}＜\dfrac{6}{3} 　 ⇔　1＜2\)<br>
+
+こちらも問題ないとは思います。
+それでは要注意の４を見ていきましょう。<br>
+
+\(a=3 b=6 m=-3\)<br>
+
+\((-3)×3＞(-3)×6　⇔　-9＞-18\)<br>
+\(\dfrac{3}{(-3)}＞\dfrac{6}{(-3)} 　 ⇔　-1＞-2\)<br>
+
+このように、不等式の両辺に負の値を掛けたり割ったりすると、<br>
+不等号の向きが入れ替わります。ここが一番ミスが起きやすいので気をつけましょう！<br>
+
+
+さて、１つここで例題を見ていきましょう。<br>
+
+１個１５０gの桃と、１個２００gのリンゴがあります。値段は、桃が１個３００円、リンゴが１個２００円です。<br>
+桃とリンゴを合わせて１５個買って、重さは、2.5kg以上、代金は３５００円以下になるようにしたい。<br>
+このとき、桃を一番多く購入出来る個数を求めよ。<br>
+
+まず、桃の個数をx個とします。そうすると、２つ不等式を作ることが出来ますよね。<br>
+
+\(150x+200(15-x)≧2500\)<br>
+\(300x+200(15-x)≦3500\)<br>
+
+各々計算すると、<br>
+
+\(x≦10\)<br>
+\(x≦5\)<br>
+
+これら２式の共通範囲は、<br>
+
+\(x≦5\)<br>
+
+このことより、桃の個数は５個以下でないと、成り立たない。<br>
+よって、桃を一番多く購入出来る個数は５個になります。<br>
+
+この例題のような、２つ以上の不等式を組み合わせたものを、連立不等式といいます。<br>
+解き方としては、一つ一つの不等式を求めて、共通範囲が解答となります。<br>
+ミスを減らすために数直線上に、それぞれの不等式の範囲を描いてみると<br>
+共通範囲が目で見てわかるのでとても分かりやすくなります。<br>
+慣れるまでは、是非描いてから解くことをお勧めいたします。<br>
+
+
+不等式も、最大値と最小値を求める時など様々な場面で使うので、<br>
+この不等式の扱い方に慣れておきましょう。<br>
+
+
+
+
+    </div>
+  </div>
+
+  <div id="cover"></div>
+
+<!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-1.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">実数</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentText"><a href="#" class="css_btn_class">教程を見る</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程 終わり -->
+
+
+<section class="contentsWorks">
+
+  次の式を因数分解しなさい。<br><br>
+  (1) \(3x^2+11x+10\)<br>
+  (2) \(x^2-y^2+6y-9\)<br>
+
+
+
+
+
+</section>
+
+
+<div class="tile-container">
+  <div class="tile css_btn_class" data-cta-target=".js-modal-1">解説を見る</div>
+</div>
+
+
+
+      <div class="js-modal-1 modal modal--1">
+          <span class="modal-close-btn"></span>
+    			<h1>解説ページ</h1>
+<br><br>
+          (1)たすき掛けして<br>
+          \(3x^2+11x+10=(x+2)(3x+5)\)<br><br>
+
+          (2)\(x^2-Y^2+6y-9=x^2-(y^2-6y+9)=\)<br>
+          \(x^2-(y-3)^2=(x-y+3)(x+y-3)\)<br>
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+<script src="../../../js/popup.js"></script>
+<script src="../../../js/cta.js"></script>
+<script>
+var closeFn;
+function closeShowingModal() {
+  var showingModal = document.querySelector('.modal.show');
+  if (!showingModal) return;
+  showingModal.classList.remove('show');
+  document.body.classList.remove('disable-mouse');
+  document.body.classList.remove('disable-scroll');
+  if (closeFn) {
+    closeFn();
+    closeFn = null;
+  }
+}
+document.addEventListener('click', function (e) {
+  var target = e.target;
+  if (target.dataset.ctaTarget) {
+    closeFn = cta(target, document.querySelector(target.dataset.ctaTarget), { relativeToWindow: true }, function showModal(modal) {
+      modal.classList.add('show');
+      document.body.classList.add('disable-mouse');
+      if(target.dataset.disableScroll){
+        document.body.classList.add('disable-scroll');
+      }
+    });
+  }
+  else if (target.classList.contains('modal-close-btn')) {
+    closeShowingModal();
+  }
+});
+document.addEventListener('keyup', function (e) {
+  if (e.which === 27) {
+    closeShowingModal();
+  }
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>sonovy | ソノビー　高校数学l 数と集合　実数</title>
+<link href="../../../css/phone.css" rel="stylesheet">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- swiper.jsの導入 -->
+<script src="../../../js/jquery-1.10.2.min.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+  	<div class="curriculum">
+      <!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-1.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">集合</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentWork"><a href="#" class="css_btn_class">問題を解く</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程　end -->
+
+  <div class="contentsWorks">
+
+
+
+
+    </div>
+  </div>
+
+  <div id="cover"></div>
+
+<!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-1.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">実数</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentText"><a href="#" class="css_btn_class">教程を見る</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程 終わり -->
+
+
+<section class="contentsWorks">
+
+  次の式を因数分解しなさい。<br><br>
+  (1) \(3x^2+11x+10\)<br>
+  (2) \(x^2-y^2+6y-9\)<br>
+
+
+
+
+
+</section>
+
+
+<div class="tile-container">
+  <div class="tile css_btn_class" data-cta-target=".js-modal-1">解説を見る</div>
+</div>
+
+
+
+      <div class="js-modal-1 modal modal--1">
+          <span class="modal-close-btn"></span>
+    			<h1>解説ページ</h1>
+<br><br>
+          (1)たすき掛けして<br>
+          \(3x^2+11x+10=(x+2)(3x+5)\)<br><br>
+
+          (2)\(x^2-Y^2+6y-9=x^2-(y^2-6y+9)=\)<br>
+          \(x^2-(y-3)^2=(x-y+3)(x+y-3)\)<br>
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="../../../js/popup.js"></script>
+  <script src="../../../js/cta.js"></script>
+  <script>
+  var closeFn;
+  function closeShowingModal() {
+    var showingModal = document.querySelector('.modal.show');
+    if (!showingModal) return;
+    showingModal.classList.remove('show');
+    document.body.classList.remove('disable-mouse');
+    document.body.classList.remove('disable-scroll');
+    if (closeFn) {
+      closeFn();
+      closeFn = null;
+    }
+  }
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+    if (target.dataset.ctaTarget) {
+      closeFn = cta(target, document.querySelector(target.dataset.ctaTarget), { relativeToWindow: true }, function showModal(modal) {
+        modal.classList.add('show');
+        document.body.classList.add('disable-mouse');
+        if(target.dataset.disableScroll){
+          document.body.classList.add('disable-scroll');
+        }
+      });
+    }
+    else if (target.classList.contains('modal-close-btn')) {
+      closeShowingModal();
+    }
+  });
+  document.addEventListener('keyup', function (e) {
+    if (e.which === 27) {
+      closeShowingModal();
+    }
+  })
+  </script>
+
+</body>
+</html>

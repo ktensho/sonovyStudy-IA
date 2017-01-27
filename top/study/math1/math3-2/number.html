@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>sonovy | ソノビー　高校数学l 数と集合　実数</title>
+<link href="../../../css/phone.css" rel="stylesheet">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- swiper.jsの導入 -->
+<script src="../../../js/jquery-1.10.2.min.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+  	<div class="curriculum">
+      <!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-2.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">二次関数の最大と最小</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentWork"><a href="#" class="css_btn_class">問題を解く</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程　end -->
+
+  <div class="contentsWorks">
+
+
+二次関数の最大と最小<br>
+
+グラフの問題でよく問われる、最大値、最小値。<br>
+二次関数については、どのように考えて求めれば良いか。<br>
+今回はあらゆる二次関数の最大値と最小値をササッと求められるようになりましょう。<br>
+
+二次関数の最大値と最小値の問題を考えた時に、大きく２つのパターンがあります。<br>
+
+パターン１は、特にxの範囲、つまり定義域が定められていないパターンです。<br>
+このときは、二次関数の頂点を求めることさえ出来れば、簡単に解くことが出来ます。<br>
+実際に次の二次関数の最大値と最小値を考えていきましょう。<br>
+
+\(y=a(x-p)^2+q…①\)<br>
+
+今回は二次関数について考えていくので、a=0については考えません。<br>
+まずは、二次関数を見たら、頂点と軸を求めましょう。<br>
+といってもこの形で式が表されていれば、一目瞭然ですよね。<br>
+
+頂点(p,q) 軸x=p<br>
+<br>
+では、aの範囲を分けて考えていきましょう。<br>
+
+a＞0のとき<br>
+考えていきましょうと言っても、①の式を見ただけでは少し分かりにくいですかね？<br>
+では、グラフを描いてみましょう。<br>
+
+<img src="../../../img/3-2-1.png"><br>
+
+どうでしょう、グラフを描いてみれば最小値については、何となくイメージついた方も多いのではないでしょうか。<br>
+そうです、この二次関数の頂点が最小値です。<br><br>
+イメージとしては、頂点よりも左側から頂点によっていくと、徐々に値が減少していき、<br>
+頂点を超えて更に右側へ進んでいくと、逆に徐々に値が増加していきます。<br>
+そのため、丁度頂点が最小値となります。<br>
+では、最大値についてはどうなるか。こちらについては定義できません。<br>
+当然ながら範囲がなければ、どんどん値が大きくなっていき、どこまでも進んでいきます。<br>
+なので、最大値については、なし、と答えるしかないです。<br>
+
+a＜0のとき<br>
+こちらも同様に、まずグラフを描いて考えてみましょう。<br>
+
+<img src="../../../img/3-2-2.png"><br>
+
+やはり同様に考えていくと、頂点が最大値であることが分かりますね。<br>
+イメージも真逆で、頂点よりも左側から頂点によっていくと、徐々に値が増加していき、<br>
+頂点を超えて更に右側へ進んでいくと、逆に徐々に値が減少していきます。<br>
+そしてこれまた同様に、範囲が決まっていなければ、どんどん小さな値になっていきますし、どこまでも小さな値になっていきます。<br>
+そのため、先程と同様に最小値については、なし、となります。<br>
+
+よって、<br>
+
+a＞0　のとき　x=p min q max　なし<br>
+a＜0　のとき　x=p max q min　なし<br>
+
+となります。<br>
+ちなみに、minは最小を表す、minimumの略で<br>
+maxは最大を表す、maximumの略です。<br>
+
+
+それでは、パターン２を考えてみましょう。<br>
+パターン２は、パターン①とは逆に、定義域がある、つまり、xの範囲が決まっている時です。<br>
+パターン１は、頂点さえ求めることが出来れば、求められましたが、今回はそう簡単にはいきそうにはないですね。<br><br>
+
+このパターンについては、いきなり文字のみの例を出すと少し感覚的に掴みにくくなると思いますので<br>
+具体例を出して考えていきましょう。<br>
+
+\(y=x^2-6x+4\)<br>
+
+①定義域　(0≦x≦2)<br><br>
+②定義域　(1≦x≦4)<br>
+
+
+①、②の定義域に関わらず、まずは、おなじみの頂点と軸を求めましょう。<br>
+
+　\(y=x^2-6x+4\)<br>
+⇔\(y=(x-3)^2-5\)<br>
+
+よって頂点は、<br>
+
+(3,-5) <br>
+
+軸は、<br>
+
+x=3　<br>
+
+では、まず①の定義域の時<br>
+
+
+<img src="../../../img/3-2-3.png"><br>
+
+さて、二次関数の最大値と最小値を求める時に、定義域が定められている際は、<br>
+まず、いつも通り、頂点と軸を求めた後<br>
+軸が定義域の範囲内か範囲外かを考えます。<br>
+①のときは、軸は定義域の範囲外ですね。<br>
+このときは、上図を見て頂ければ、定義域の端が最大値、もしくは最小値になっていますね。<br>
+今回は、<br>
+
+x=0のとき、最大値　4　　<br>
+x=2のとき、最小値　-4<br>
+
+このように、軸が含まれていないときは、定義域の端の値を求めれば、最大値と最小値が求めることが出来ます。<br>
+<br>
+それでは、②の定義域の時<br>
+
+<img src="../../../img/3-2-4.png"><br>
+
+この定義域の時は、範囲内に軸が含まれていますね。<br>
+このときは、頂点が、最大値もしくは最小値をとります。<br>
+このグラフの場合は、最小値をとりますね。<br>
+最大値については、定義域の端のどちらか、または、両方となります。<br>
+グラフを見て頂ければ、すぐ分かると思いますが、皆さんは一度計算してしっかり確認してくださいね。<br>
+
+x=1のとき、最大値　-1　　<br>
+x=3のとき、最小値　-5<br>
+
+パターン２については、他にも軸がaなどの文字で置かれていて、軸が動くような問題もありますが<br>
+基本は、まず頂点と軸を求めて、軸が定義域の範囲内か範囲外かを考える。<br>
+これを、徹底することにより求めることが出来ますので、あらゆる問題に触れて練習していきましょう。<br>
+
+
+さて、話は一転して二次方程式についてお話していきます。<br>
+
+
+今まで様々な方程式を学んできたかと思いますので、何となく二次方程式がどのようなものか予測がつくかと思いますが<br>
+まずは、定義から述べさせて頂きます。<br>
+
+式を整理して、(2次式)=0　の形に変形できる方程式を、２次方程式といいます。<br>
+<br>
+一般的に、xの二次方程式は<br>
+
+\(ax^2+bx+c=0\)<br>
+
+と表されます。ただし、a≠0　とします。<br>
+
+ここで、a≠0とする理由は、単純にa=0だと、<br>
+一次方程式になるためです。<br>
+意外とこれが忘れがちになるので、しっかり覚えておいてくださいね。<br>
+
+何事もなく、二次方程式について説明始めましたが、<br>
+急に二次関数の話から、何故二次方程式の話をしだしたのか疑問に思われている方もいらっしゃるかもしれませんね。<br>
+しかし今まで、一次方程式を学んできた中で、グラフを使って問題を解いてきませんでしたか？<br>
+もしも、一次方程式、特に連立方程式をグラフを使って解いたことがなければ、一度解いてみてください。<br>
+というよりは、２つの一次方程式のグラフの交点を求める問題が、連立方程式の問題と見ることはできませんか？<br>
+このように、方程式と、関数やグラフは、密接な関係にあります。<br>
+
+二次方程式については、二次関数をある程度学ぶとよりわかりやすくなる点があることと、<br>
+逆に二次方程式について学んでいないと、二次関数で解きにくい問題があるので<br>
+このタイミングで二次方程式について紹介させて頂くことにしました。<br>
+
+それでは、二次方程式の解き方ですが、主に２つあります。<br>
+まず１つが、因数分解を使って解いていく方法です。<br>
+１つ具体例を出しましょう。<br>
+
+\(x^+x-6=0\)<br>
+
+左辺の因数分解は、もう皆さんお手の物ですよね？<br>
+ちょっとつまずく方は、二次方程式の分野では、よく使われますし、他の分野でも頻出なので、<br>
+因数分解の練習をもう少しやっておきましょう。<br>
+
+では、左辺について因数分解をして<br>
+
+　\(x^2+x-6=0\)<br>
+⇔\((x+3)(x-2)=0\)<br>
+
+さて、xがどのような値をとれば、左辺の式が、0になるでしょうか。<br>
+実はこれをわかりやすくするために、因数分解を行いました。<br>
+左辺の、(x+3)、または、(x-2)、の部分が、0になれば<br>
+左辺が、0になることがお分かりでしょうか。<br>
+分かりにくい方は、理解するために、次のように文字を置いてみましょう。<br>
+
+A=(x+3)<br>
+B=(x-2)<br>
+
+こうすれば、元の式は次のように表せますよね。<br>
+
+AB=0<br>
+
+この形であれば、AまたはBが、0になればいいことがわかりやすくなりましたよね。<br>
+よって、A=0またはB=0、つまり、(x+3)=0または(x-2)=0　を求めれば、この方程式の解が求められます。<br>
+
+　(x+3)=0<br>
+⇔x=-3<br>
+
+　(x-2)=0<br>
+⇔x=2<br>
+
+ゆえに、\(x^2+x-6=0\)　の解は、x=-3,2 となります。<br>
+
+この解き方のいいところは、因数分解さえしてしまえば、すぐに解がわかるところです。<br>
+そして、この解き方を利用すれば、次のような二次関数の問題が同様に解くことができます。<br>
+
+次の二次関数のグラフと、x軸との交点の座標を求めよ。<br>
+
+\(y=x^2+x-6\)<br>
+
+<img src="../../../img/3-2-5.png"><br>
+
+さて、いつもであれば、頂点と軸を出しましょうと言うところですが、<br>
+この問題に限り、すぐに因数分解が分かったときは、軸などを求める前に因数分解をしてしまいましょう。<br>
+
+　\(y=x^2+x-6\)<br>
+⇔\(y=(x+3)(x-2)\)<br>
+
+x軸と交わる、つまりy=0なので<br>
+
+\((x+3)(x-2)=0\)<br>
+
+こちらの解を求めることになります。<br>
+これは、先程解いた二次方程式と同じですね。<br>
+ここまで言えば答えについては、皆さん自身の手で、問題なく求められると思いますので省略しますね。<br>
+
+この問題を見た後ですと、二次方程式の問題は、二次関数のグラフとx軸の交点を求める問題は、<br>
+同じことであることは、ご理解いただけましたでしょうか？<br>
+少なくとも、二次方程式と二次関数が無関係ではないことはお分かり頂けたと思います。<br>
+
+さて、では次のような二次方程式の問題のように因数分解が出来ないようなものや、<br>
+因数分解は出来そうだけど、なかなか因数分解出来ずに困った時はどうしましょうか。<br>
+
+\(ax^2+bx+c=0\)　(ただし、a≠0)<br>
+
+こんな問題見せられて、因数分解しろって言われても出来ないですよね…<br>
+実は因数分解をしなくても、二次方程式の解を一発で求めることが出来る公式があります。<br>
+そんな便利な公式があるなら、先に教えろよ！とか、因数分解なんて出来なくても問題ないじゃないか。<br>
+なんて思われるかもしれませんが、そういいことばかりでもないです。<br>
+因数分解がすぐ出来る問題であれば、紹介する公式を使うよりも、因数分解で解いた方が圧倒的に速く答えに辿り着くことが出来ます。<br>
+そのため、今回のように因数分解が明らかに出来ない時や、因数分解がうまく出来ない時、<br>
+あとは、検算するときに使うようにしましょう。<br>
+
+今回は公式を紹介する前に、導いていきます。<br>
+
+\(ax^2+bx+c=0\) (ただし、a≠0)<br>
+
+この式は、次の二次関数のグラフと、x軸の交点とみることができますよね。<br>
+
+
+<img src="../../../img/3-2-6.png"><br>
+
+式で分けて表すと、次の２式で表します。<br>
+
+\(y=ax^2+bx+c\)<br>
+y=0<br>
+
+さて、先程の因数分解を利用した時の例では、求めませんでしたが<br>
+二次関数といえば、頂点と軸を求めましょう。<br>
+そしてこの計算少し大変かもしれませんが、<br>
+面倒くさがらずに、計算練習のついでにやってみましょう！<br>
+
+　 \(y = ax^2 + bx + c\)<br>
+⇔ \(y = a( x+ b/2a )^2 - b^2/4a + c\)<br>
+
+ちなみに、今更ですが、この軸と頂点を求めているときにしている計算を平方完成といいます。<br>
+よく使われる言葉ですので、覚えておきましょう。<br>
+ここで、y=0　を代入してみましょう。<br>
+ついでに、見やすくするため、左辺と右辺を入れ替えます。<br>
+
+ \(a( x+ b/2a )^2 - b^2/4a + c　= 0\)<br>
+⇔ \(a( x+ b/2a )^2 = b^2/4a - c\)　<br>
+⇔ \(a( x+ b/2a )^2 = (b^2　- 4ac)/4a\) <br>
+⇔ \(( x+ b/2a )^2 = (b^2　- 4ac)/4a^2\) <br>
+
+さて、ここで両辺の平方根をとる時に、<br>
+本来場合分けするべき点がありますが、スムーズに説明するために一旦省きます。<br>
+皆さんは私が説明するまでの間、何を場合分けしなければいけないのか考えてみてください。<br>
+
+
+⇔  \(x+ b/2a  = ±√(b^2　- 4ac)/√(2a^2) \)<br>
+⇔  \(x = -b±√(b^2　- 4ac)/2a\) <br>
+
+長い道のりでしたが、解が出ました。<br>
+そして、この解の形が、解の公式と呼ばれています。<br>
+a、b、cに、それぞれ該当する値を代入すると、解が求められます。<br>
+最悪この導いた流れだけでも、完璧にしておけば求められますが、時間かかるのは目に見えていますよね。<br>
+複雑な公式で、代入して計算するのも少し大変かもしれませんが<br>
+困ったときに役立ちますので、覚えておきましょう。<br>
+
+と、公式をスムーズに紹介するために<br>
+後回しにした場合分けについて考えましょう。<br>
+皆さん何を場合分けしないといけないか分かりましたか？<br>
+
+ここで一番無視出来ない場合分けは、「b^2-4ac\)」の大きさについてです。<br>
+ルートの中が負の値になってはいけませんよね。<br>
+それでは考えていきましょう。<br>
+<br>
+ \(b^2 - 4ac ＞ 0 \)のとき<br>
+
+このときは問題ないですよね？解が２つあり、<br>
+グラフで表すと下図のように、x軸と2点で交わるグラフになります。<br>
+
+<img src="../../../img/3-2-7.png"><br>
+
+\(b^2-4ac=0\)のとき<br>
+
+このときは少し特殊で、解が１つになるときになります。<br>
+一例を出すと、次のような二次方程式ですかね。<br>
+
+ 　\(x^2 - 2x + 1 = 0\)<br>
+⇔ \((x-1)^2 = 0 \)<br>
+
+このように、因数分解すると、(px-q)^2=0 の形になるものです。<br>
+また、二次方程式の解が１つの時は、重解を持つといいます。<br>
+そして、グラフにすると、下図のように、x軸に１点で接します。<br>
+
+<img src="../../../img/3-2-8.png"><br>
+<br>
+
+\(b^2-4ac＜0のとき\)<br>
+
+さて、問題の負の値をとるときです。<br>
+ここまで、場合分けしてきて、わざわざグラフも描いている点から、察しのいい方はお気付きでしょう。<br>
+今回に関しては１つ例を出して先にグラフを見て頂いた方が、実感しやすいですかね？<br>
+
+ \(x^2 - x + 1 = 0\)<br>
+
+　\(b^2-4ac　= 1-4\)<br>
+⇔\(b^2-4ac　= -3\)<br>
+
+と、見ての通り、負の値になりました。<br>
+では、このときのグラフを描いてみましょう。<br>
+
+<img src="../../../img/3-2-9.png"><br>
+
+見ての通り先程までのグラフとは違い、x軸と交わることも接することもありませんね。<br>
+つまり、どういうことか。この二次方程式には、実数の範囲では、解が存在しません。<br>
+二次方程式だけで、考えていると、解の公式とまで説明されているにも関わらず<br>
+ルートの中が負の値のものは、解がないとはどういうことなのか、分かりにくいのですが、<br>
+このようにグラフと関連させて考えると、納得は頂けるのではないでしょうか。<br>
+そりゃx軸と交わらない、つまり、「y=0」　なんて存在しないにも関わらず、<br>
+y=0を求めさせるような二次方程式を前にしたら、<br>
+困った時の解の公式でもお手上げでしょう？<br>
+なので、ルートの中を負の値にして、この二次方程式には解がないぞと伝えてくれているのですね。<br>
+流石、困った時の解の公式です。解がないときは、きっちり一目で分かるように教えてくれるのです。<br>
+
+と、少し私の勝手なイメージで解の公式に、感情移入してみましたが<br>
+ちょっと苦手な問題や、公式と出会った時は、自分なりにストーリーを設定してみるのも面白いかもしれません。<br>
+もしもなかなか出来ない問題や、なかなかしっくり来ない公式があるときは一度試してみてください。<br>
+もちろん合う合わないもありますから、無理にはしなくて大丈夫ですよ。<br>
+
+話が長くなりましたね、(\b^2-4ac＜0\)のときは、「解なし」が答えです。<br>
+
+
+
+そして、この、「\(b^2-4ac\)」は、「\(D=b^2-4ac\)」とよく表され、判別式と呼ばれています。<br>
+a、b、c、の値さえ分かれば、その二次方程式の解があるのかないのか、<br>
+解があるなら、２つなのか、１つなのかを判別出来ますからね。<br>
+おそらくこの、「D」も「Discrimination」という判別という意味のある英単語から来ているのではないでしょうか。<br>
+このように数学の式に、何か文字を置くときは、英単語の頭文字などから取ってきていることがよくあります。<br>
+私も、できる限り紹介していきますが、意味がありそうな文字の置き方をしてるのではないかと感じたとき、<br>
+少し調べてみてください。どういう意味でその文字が置かれているのか、理解したり、認識したときに<br>
+その式の表す意味が分かってくるので、使いどころがわかりやすくなります。<br>
+細かいかもしれませんが、色んなところにアンテナを張りつつ学習していきましょう。<br>
+
+
+    </div>
+  </div>
+
+  <div id="cover"></div>
+
+<!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-2.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">二次関数の最大と最小</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentText"><a href="#" class="css_btn_class">教程を見る</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程 終わり -->
+
+
+<section class="contentsWorks">
+
+  <section class="works">
+    <p>(1)</p>
+
+    </section>
+  <section class="works">
+    <p>(2)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+  <section class="works">
+    <p>(3)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+  <section class="works">
+    <p>(4)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+  <section class="works">
+    <p>(5)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+
+</section>
+
+
+<div class="tile-container">
+  <div class="tile css_btn_class" data-cta-target=".js-modal-1">解説を見る</div>
+</div>
+
+
+
+      <div class="js-modal-1 modal modal--1">
+          <span class="modal-close-btn"></span>
+    			<h1>解説ページ</h1>
+          <p>(1)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(2)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(3)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(4)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(5)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(6)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(7)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="../../../js/popup.js"></script>
+  <script src="../../../js/cta.js"></script>
+  <script>
+  var closeFn;
+  function closeShowingModal() {
+    var showingModal = document.querySelector('.modal.show');
+    if (!showingModal) return;
+    showingModal.classList.remove('show');
+    document.body.classList.remove('disable-mouse');
+    document.body.classList.remove('disable-scroll');
+    if (closeFn) {
+      closeFn();
+      closeFn = null;
+    }
+  }
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+    if (target.dataset.ctaTarget) {
+      closeFn = cta(target, document.querySelector(target.dataset.ctaTarget), { relativeToWindow: true }, function showModal(modal) {
+        modal.classList.add('show');
+        document.body.classList.add('disable-mouse');
+        if(target.dataset.disableScroll){
+          document.body.classList.add('disable-scroll');
+        }
+      });
+    }
+    else if (target.classList.contains('modal-close-btn')) {
+      closeShowingModal();
+    }
+  });
+  document.addEventListener('keyup', function (e) {
+    if (e.which === 27) {
+      closeShowingModal();
+    }
+  })
+  </script>
+
+</body>
+</html>

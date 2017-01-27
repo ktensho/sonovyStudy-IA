@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>sonovy | ソノビー　高校数学l 数と集合　実数</title>
+<link href="../../../css/phone.css" rel="stylesheet">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- swiper.jsの導入 -->
+<script src="../../../js/jquery-1.10.2.min.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+  	<div class="curriculum">
+      <!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-2.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">実数</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentWork"><a href="#" class="css_btn_class">問題を解く</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程　end -->
+
+    <div class="contentsWorks">
+    	<p>「数」ってざっくり言っても色々ありますよね。<br>
+  普段私たちがよく使っている「数」はどのようなものがありますか？<br>
+  <p class="func">\(1,2,3,\cdots\)</p><br>
+  まず私たちが生まれてきて最初に習う「数」は上記のようなものですよね。<br>
+  一般的にこのような「数」は
+  <b class="word">「正の整数」</b>
+  と、よばれています。<br>
+  さて、正の整数ときたら真逆の整数がありましたよね<br>
+  <br>
+  <p class="func">\(-1,-2,-3,\cdots\)</p><br>
+  こちらは
+  <b class="word">「負の整数」</b>と、よばれています。<br>
+  正の整数、負の整数、0を合わせて<b class="word">「整数」</b>
+  と、よばれています。<br>
+
+  第1回は、世の中にある数についてのお話です。<br>
+  普段使う「整数」というのは数の中ではごく一部でしかなく、他にもたくさんの数が存在します。
+  そして、この存在する数すべて数のことを「実数」と呼びます。
+  いわゆる、世の中のある数ということです。この数について詳しく話していきましょう。<br><br>
+
+  「整数」はわたしたちはすごい身近に扱っているので問題はないと思いますが、そのほかにはどん数があるのでしょうか。<br>
+  おそらくこれまでの学習や、人によっては身近な部分で\(\pi\)や\(\sqrt{ }\)を使ったことがあると思います。<br>
+  CMなどでも扱われていたπについて見てみましょう。<br>
+  <p class="func">\(\pi = 3.14159265358979\cdots\)</p><br>
+  この\(\pi\)という数は「循環しない」無限小数です。<br>
+  「循環しない」という言葉はこの単元で実数を理解するのには重要な言葉なので理解しておきましょう。<br>
+
+        </p>
+
+
+    	この、「循環しない」無限小数のことを<b class="word">「無理数」</b>といいます。
+
+    	また、無理数は分数で表せられないとも言い換えれます。<br>
+        逆に分数で表せられるものを「有理数」と呼び、整数mも\(\dfrac{m}{1}\)
+   	で表せられるので、整数は有理数に位置づけられます。<br>
+
+        循環しない小数とは逆に循環する小数<br>
+        例を取ると、<p class="func">\(\dfrac{1}{3}\)＝0.3333333\(\cdots\)</p>や<p class="func">\(\dfrac{5}{11}=0.454545\cdots\)</p>
+    	のような数を循環小数といい、これは有理数に含まれます。<br>
+
+    	またこのように、少数点以下が無限に続く少数のことを特に、無限小数といいます。<br>
+    	その無限小数とは逆に、\(0.7\)などの小数第何位かで終わる小数のことを有限少数といい、これも有理数に含まれます。<br>
+    	そしてこの有理数に関して、有理数の四則演算の結果は必ず有理数になるという特性があります。<br>
+
+
+    	たらたらと定義の話が多くなってしまいましたが、一度ここで整理をすると、「循環しない」小数は無理数でそのほかは有理数である。ということです。<br>
+    	そしてこの有理数と無理数を合わせて「実数」と呼び、存在するすべての数の定義付けができたことになります。<br>
+
+    	どうでしょう。これから数学を学んでいくうえで点数に直接結びつくわけではありませんが、このような部分をしっかり理解することが数学を楽しむうえで大事なのかもしれません。<br><br>
+
+
+      	さて、ここからは次の単元に繋げるために実数を視覚的に、数直線を使って説明していきます。<br>
+          数直線は小学生からの学習で馴染みがあると思います。<br>
+          先ほどの整数や、\(\pi\)、小数、つまり実数はこの数直線上に存在します。<br>
+      	もちろん正の数、負の数も混在しています。<br>
+      	なぜこの数直線が大事なのかというと、「正と負」、「絶対値」を理解するのに非常にわかりやすいからです。<br>
+      	「いやいや！絶対値はともかく、流石に+や-のことぐらいは問題なくわかるよ！」<br>
+      	なんて思われる方が多いのではないのでしょうか。<br>
+      	しかし、「マイナスの値×マイナスの値＝プラスの値」に何故なるのか。<br>
+      	この議題に関して自信を持って理由を説明できますか？<br>
+      	できる方は当然問題ないです。念のため確認程度に目を通していただければ結構です。<br>
+      	ただ説明できない人は、意外といるんじゃないでしょうか。<br>
+      	もしかするとあまり気にせず、「教えられたから、習ったから、そういうものだから」と今まで過ごされていたのではないでしょうか。<br>
+      	でも、一度意識しだすと不思議ではないですか？そんなことないって？(笑)<br>
+          今回はそんな不思議、疑問をあらゆる角度から解消いたしましょう。<br>
+
+      	まず、「プラスの値×プラスの値」について考えてみましょう。
+          <p class="func">
+      	\(2\times 3=6\cdots (1)\)<br>
+      	\(4\times 2=8\cdots (2)\)<br>
+      	\(7\times 3=21\cdots (3)\)<br>
+          </p>
+
+      	と、まぁ見ての通り当然プラスの値になりますよね。<br>
+      	ここでさらにおさらいなのですが、かけ算って一体どういうものでしょうか。<br>
+
+          私は下記のように考えています。<br>
+
+      	「ある数の塊」を「ある向き、方向」に掛けた数だけ「ある数の塊」を増やすこと<br>
+
+          少しわかりにくいですかね。では（２）を例に考えてみましょう。<br>
+
+      	（数直線１）
+
+          <br>
+          上記の数直線を見てもらえるとわかりやすいのですが
+      	\(4\times 2\)というのは、
+      	「\(4\)という数字の塊」を、「向き、進行方向を変えず」に、塊を\(2\)つに増やすことです。
+          <br>
+          <br>
+
+
+  	  </p>
+
+        <p>
+
+          次に「プラスの値」×「マイナスの値」について考えてみましょう。
+          先ほどの例と数値を合わせて、\(4\times (-2)\)を例に同様に考えると
+
+      	「\(4\)という数字の塊」を、「向き、進行方向を逆」にして、塊を\(2\)つに増やすことです。
+          数直線にしてみると次のようになります。<br>
+          <br>
+      	（数直線２）<br>
+          <br>
+      	どうでしょう、オチが見えてきましたか？<br>
+      	そうです、「マイナスの値」を掛けると方向が逆になるのです。<br>
+
+
+      	それでは、「マイナスの値」×「マイナスの値」ではどうなるのか。考えていきましょう。<br>
+
+          例の如く数字を合わせて、\((-4)\times(-2)\)を例に考えると<br>
+      	「\(-4\)という数字の塊」を、「向き、進行方向を逆」にして、塊を\(2\)つに増やすことです。<br>
+          <br>
+      	（数直線３）
+          見ての通り「マイナスの値」を逆方向に数を増やせば当然「プラスの値」になりますよね。<br>
+
+      	ちなみに、イメージとしては数直線においてプラスは右向き、マイナスは左向きです。<br>
+      	これも少し考えれば納得いただけると思いますが
+          数直線では右に進むほど値は大きくなりますよね？逆に左に進むと値は小さくなります。<br>
+      	そのため、値を大きくするプラスの値は右向きであり、値を小さくするマイナスの値は左向きです。<br>
+          今は左右はともかく、符号がついていれば向きがある、ということを覚えておいてください。<br>
+      	この感覚が後で説明する絶対値で生かされます。<br>
+          <br>
+
+        </p>
+
+        <p>
+      	さて、イメージのお話はここまでにして、「マイナスの値×マイナスの値=プラスの値」を
+          分配法則と「\(1+(-1)=0\)」を使用して証明して閉めたいと思います。<br>
+          <br>
+          <p class="func">
+  \befgn{eqnarray*}
+      	　1+（-1）& = & 0 \\
+      	（-1）×｛1+（-1）｝& = &（-1）×0 \\
+      	（-1）×１+（-1）×（-1）& = & 0 \\
+      	-1+（-1）×（-1）& = & 0 \\
+      	（-1）×（-1）& = & 1
+  \end{eqnarray*}
+          一応解説を入れると下記になります。<br>
+          <p class="func">
+  \befgn{eqnarray*}
+      	　1+（-1）& = & 0 \\
+      	（-1）×｛1+（-1）｝& = &（-1）×0（両辺に（-1）をかけました） \\
+      	（-1）×１+（-1）×（-1）& = & 0 （左辺は分配法則を使用して展開、右辺は計算しました）\\
+      	-1+（-1）×（-1）& = & 0（左辺の（-1）×１の部分を計算しました） \\
+      	（-1）×（-1）& = & 1（左辺の-1を右辺へ移項しました）
+  \end{eqnarray*}
+          </p>
+      	これで符号については理解していただけたと思いますが、「絶対値」についても、理解していただいたも当然です。<br>
+          先ほど出てきた「塊の大きさ」がそのまま「絶対値」なのです。<br>
+      	4も-4も「塊の大きさ」は4なので|4|、|-4|はともに4となります。<br>
+      	この「絶対値」については向きは考えなくても良い、つまり、符号は関係ありません。<br>
+          長くなりましたが、数のウォーミングアップは以上です。<br>
+
+
+          続いて、平方根の定義と性質について説明していきます。
+      	まず平方根とは、、、という部分ですが、\(x^2=a\)を満たすと\(x\)は\(a\)の平方根といいます。
+      	ここで、さらに大事な定義としては<br>
+
+      	（i）\(a>0\)のとき　　\(a\)の平方根は正と負の２つあり、根号√を用いて
+          正の方を\(\sqrt{a}\)、負の方を\(-\sqrt{a}\)と表し、<br>
+
+      	（ii）\(a=0\)のとき　\(a\)の平方根は\(0\)であり、\(\sqrt{0}$=0\)となります。<br>
+
+      	（iii）\(a<0\)のとき　\(a\)の平方根は実数の範囲にはないとなります。<br>
+
+          具体例をあげると２の平方根は\(±\sqrt{2}\)、１６の平方根は±４ということです。
+
+      	この部分は定義なんですが、非常に大事なので理解はもちろん、感覚として身に着けていただきたい部分です。
+
+          感覚として身についていれば、次のことが成り立つとわかるはずです。
+
+      	\(a\geqq0\)のとき　\(sqrt{a^2}=a\)
+      	\(a<0$のとき　\sqrt{a^2}=-a\)
+
+      	これはつまり、先ほどの絶対値の部分と重なりますが、\(sqrt{a^2}=|a|\)と表せることがわかります。
+
+          以上の定義の部分を踏まえると、以下の性質が平方根にはあることがわかります。
+
+      	a>0,b>0のとき
+      	（１）\(\sqrt{a}\sqrt{b}=\sqrt{ab}\)
+      	（２）\(\dfrac{\sqrt{a}}{\sqrt{b}}=\sqrt{\dfrac{a}{b}}\)
+      	a>0,k>0のとき
+      	（３）\(sqrt{k^2a}=k\sqrt{a}\)
+
+      	この性質については、理解というよりは呼吸的に使っていってもらう性質になります。
+      	この性質を組み合わせることで、根号を含む演算が可能になります。
+
+
+
+          具体例をあげてみましょう。
+          \(\sqrt{6}\times\sqrt{3}=\sqrt{3^2\times2}=3\sqrt{2}\)
+          少し解説をいれると、根号を含む演算のポイントとしては因数をまとめることです。
+          文字式の場合は自然にまとめると思いますが、数字の場合は特に因数を意識して演算して欲しいと思います。
+
+      	どうでしょうか。ここまで理解できているのであれば、これから複雑な演算が登場しても
+          一つ一つ落ち着いて考えてもらえば回答できるはずです！
+
+          続いて考えることは分母に根号を含んでいる場合、
+          変形して分子にもっていきます。このことを「分母の有理化」と呼びますが、なぜ行うのでしょうか。
+
+      	ひとまず説明はおいて、実際に有理化してみましょう。
+
+          \(\dfrac{2}{\sqrt{5}+\sqrt{3}=\dfrac{2(\sqrt{5}-\sqrt{3})}{(\sqrt{5}+\sqrt{3})(\sqrt{5}-\sqrt{3})}}=\dfrac{2(\sqrt{5}-\sqrt{3})}{(\sqrt{5})^2-(\sqrt{3})^2}=\dfrac{2(\sqrt{5}-\sqrt{3})}{5-3}=\sqrt{5}-\sqrt{3}\)
+          分母分子に同じ数をかけて整理しているだけなので、この作業自体に問題はないと思いますが、
+      	なぜ有理化するのかというのが疑問だと思います。
+          採点者が見やすいというのもありますが、例えば \(sqrt{2}\)というの大体1.4くらいで
+      	この1.4を割るのか、1.4で割るのかを考えてもらえれば圧倒的に後者の方が面倒くさいと思うはずです。
+      	ですので根号は分子に揃える、つまり有理化するのです。
+
+      	どうでしょう。少し納得のいかないかたもいらっしゃるかもしれないですが、数学はこれくらい理屈的に考えていくものなので、この感覚も持って学習して欲しいと思います。
+
+
+
+
+          次に「プラスの値」×「マイナスの値」について考えてみましょう。
+          先ほどの例と数値を合わせて、４×（-２）を例に同様に考えると
+
+      	「４という数字の塊」を、「向き、進行方向を逆」にして、塊を２つに増やすことです。\\
+          数直線にしてみると次のようになります。<br>
+          <br>
+      	（数直線２）<br>
+          <br>
+      	どうでしょう、オチが見えてきましたか？<br>
+      	そうです、「マイナスの値」を掛けると方向が逆になるのです。<br>
+
+
+      	それでは、「マイナスの値」×「マイナスの値」ではどうなるのか。考えていきましょう。<br>
+
+          例の如く数字を合わせて、（-４）×（-２）を例に考えると<br>
+      	「-４という数字の塊」を、「向き、進行方向を逆」にして、塊を２つに増やすことです。<br>
+          <br>
+
+      	（数直線３）\\
+
+          見ての通り「マイナスの値」を逆方向に数を増やせば当然「プラスの値」になりますよね。<br>
+
+      	ちなみに、イメージとしては数直線においてプラスは右向き、マイナスは左向きです。<br>
+      	これも少し考えれば納得いただけると思いますが
+          数直線では右に進むほど値は大きくなりますよね？逆に左に進むと値は小さくなります。<br>
+      	そのため、値を大きくするプラスの値は右向きであり、値を小さくするマイナスの値は左向きです。<br>
+          今は左右はともかく、符号がついていれば向きがある、ということを覚えておいてください。<br>
+      	この感覚が後で説明する絶対値で生かされます。<br>
+          <br>
+        </p>
+      </div>
+    </div>
+
+    <div id="cover"></div>
+
+  <!-- ヘッダー教程 -->
+  <div class="container">
+    <div class="row">
+        <section class="headerWorks">
+          <div class="headerContents">
+            <div class="col-xs-4">
+            <img src="../../../img/sonovy-2.png">
+          </div>
+          <div class="col-xs-4">
+          <p class="titleWorks">実数</p>
+        </div>
+          <div class="col-xs-4">
+          <div class="presentText"><a href="#" class="css_btn_class">教程を見る</a></div>
+        </div>
+        </div>
+  	  </section>
+      </div>
+    </div>
+    <!-- ヘッダー教程 終わり -->
+
+
+  <section class="contentsWorks">
+
+    次の循環小数を分数で表しなさい。<br><br>
+
+  (1) \(0.3333\cdots\)<br><br>
+  (2) \(0.9999\cdots\)<br><br>
+
+  数直線上の次の２点間の距離を求めなさい。<br><br>
+
+  (1)\(X(2),X(5)\)<br><br>
+  (2)\(X(4),X(-5)\)<br><br>
+  (3)\(X(8),X(-4)\)<br><br>
+
+
+
+
+
+
+  </section>
+
+
+  <div class="tile-container">
+    <div class="tile css_btn_class" data-cta-target=".js-modal-1">解説を見る</div>
+  </div>
+
+
+
+        <div class="js-modal-1 modal modal--1">
+            <span class="modal-close-btn"></span>
+  	                                    	<h1>解説ページ</h1>
+
+        	（1）<br>
+        	\(0.333\cdots=x\)とおくと、<br>
+        	\(10x=3.333\dots\)と表せられる。<br>
+        	\(10x-x=3\)となるので<br>
+            \(x=\dfrac{1}{3}\)<br>
+        	よって、\(0.333\cdots=\dfrac{1}{3}\)<br><br>
+
+        	(2)\(0.999\cdots=x\)とおくと、<br>
+        	\(10x=9.999\dots\)と表せられる。<br>
+        	\(10x-x=9\)となるので<br>
+            \(x=1\)<br>
+        	よって、\(0.999\cdots=1\)<br><br><br>
+
+
+        	２点間の距離ということはつまり、２点間の差の絶対値を求めることなので<br>
+        	（A）|5-2|=3<br>
+
+            (B)|-5-4|=9<br>
+
+            (C)|-4-8|=12<br><br>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="../../../js/popup.js"></script>
+  <script src="../../../js/cta.js"></script>
+  <script>
+  var closeFn;
+  function closeShowingModal() {
+    var showingModal = document.querySelector('.modal.show');
+    if (!showingModal) return;
+    showingModal.classList.remove('show');
+    document.body.classList.remove('disable-mouse');
+    document.body.classList.remove('disable-scroll');
+    if (closeFn) {
+      closeFn();
+      closeFn = null;
+    }
+  }
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+    if (target.dataset.ctaTarget) {
+      closeFn = cta(target, document.querySelector(target.dataset.ctaTarget), { relativeToWindow: true }, function showModal(modal) {
+        modal.classList.add('show');
+        document.body.classList.add('disable-mouse');
+        if(target.dataset.disableScroll){
+          document.body.classList.add('disable-scroll');
+        }
+      });
+    }
+    else if (target.classList.contains('modal-close-btn')) {
+      closeShowingModal();
+    }
+  });
+  document.addEventListener('keyup', function (e) {
+    if (e.which === 27) {
+      closeShowingModal();
+    }
+  })
+  </script>
+
+  <style>
+
+
+		.btn, .tile {
+			display: inline-block;
+			text-decoration: none;
+			padding: 16px;
+			color: white;
+			opacity: 0.85;
+			cursor: pointer;
+			transition: 0.25s ease;
+		}
+
+		.tile {
+			width: 30%;
+		}
+		.tile-container {
+			overflow: hidden;
+      text-align: center;
+		}
+
+		.modal {
+             text-align: center;
+			position: fixed;
+             width: 100%;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: #fff;
+			color: black;
+			z-index: 1;
+			visibility: hidden;
+			opacity: 0;
+			pointer-events: none;
+              transition: 200ms ease;
+              overflow: auto;
+              border-top: 6px #79bbff solid;
+              border-left: 8px #79bbff solid;
+              border-right: 8px #79bbff solid;
+              border-bottom: 6px #79bbff solid;
+
+		}
+		.modal-close-btn {
+			display: block;
+			position: fixed;
+      padding-top: 10px;
+      padding-right: 10px;
+	 top: 50;
+      right: 0;
+      margin-right: 10px;
+      margin-top: 10px;
+	  background: url(../../../img/btn-close.png) no-repeat center;
+      background-size: cover;
+			width: 5px;
+			height: 5px;
+			padding: 16px;
+			opacity: 0.8;
+			cursor: pointer;
+			transition: 0.3s ease;
+		}
+		.modal-close-btn:hover {
+			opacity: 1;
+		}
+
+		.modal.show {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+		}
+
+		</style>
+</body>
+</html>

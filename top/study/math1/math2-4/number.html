@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>sonovy | ソノビー　高校数学l 数と集合　実数</title>
+<link href="../../../css/phone.css" rel="stylesheet">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- swiper.jsの導入 -->
+<script src="../../../js/jquery-1.10.2.min.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+  	<div class="curriculum">
+      <!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-2.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">図形の計量</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentWork"><a href="#" class="css_btn_class">問題を解く</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程　end -->
+
+  <div class="contentsWorks">
+
+    図形の計量<br>
+
+    今回は、三角比、正弦定理、や余弦定理などを使って<br>
+    様々な図形の面積や辺の長さ、角度などを求めてみましょう。<br>
+
+    まずは、次の三角形ABCの面積Sを求めてみましょう。<br>
+
+    (図形の計量　図1)<br>
+
+    皆さんは今まで三角形の面積を出すときに習った公式はどんなものでしたか？<br>
+    おそらく次の公式ですよね。<br>
+
+    三角形の面積＝底辺の長さ×高さ÷２<br>
+
+    しかし今回の三角形で分かっているのは、AB、ACの長さと、∠Aの大きさのみ。<br>
+    でも、これだけわかれば三角形の面積は容易に求められます。<br>
+    頂点Cより辺ABへ垂線を引いてみましょう。<br>
+
+    (図形の計量　図2)<br>
+
+    このCHの長さがわかれば、従来の公式を利用して三角形ABCの面積を求められます。<br>
+    そして、三角比を学んだ皆さんであれば、もうCHの長さはお分かりではないでしょうか。<br>
+    CHの長さを求めましょう。<br>
+
+    CH=ACsinA<br>
+
+    よって三角形ABCの面積Sは<br>
+
+    S=1/2×AB×ACsinA<br>
+    ⇔S=
+
+    三角比を学ぶことにより、いつの間にかあらゆる三角形の面積を簡単に求められるようになりました。<br>
+    今回の三角形の面積Sの求め方を公式としてまとめてみましょう。<br>
+
+    △ABCの面積をSとする。<br>
+
+    S=1/2bcsinA=1/2casinB=1/2absinC<br>
+
+    対象の角が鋭角のときは先ほど計算したので成り立つのは理解頂けると思いますが<br>
+    直角の時、鈍角の時はどうなるのかも実際にやってみましょう。<br>
+
+    (図形の計量　図3)<br>
+
+    頂点Cより、直線ABへ垂線を引くと<br>
+
+    (図形の計量　図4)<br>
+
+    さて、CHの長さを求めてみましょう。<br>
+    CH=bsin(180°-A)<br>
+    ⇔CH=bsinA<br>
+
+    このときの△ABCの面積Sは<br>
+
+    S=1/2bcsinA<br>
+
+    これで対象の角が鈍角でも問題ないことが理解出来たと思います。<br>
+    では、次の条件が分かっている三角形の面積はどのように求めたらよいでしょうか。<br>
+
+    (図形の計量　図5)<br>
+
+    先ほどまとめた三角形の面積の公式は使えませんね。<br>
+    ここで正弦定理、もしくは余弦定理を使えば三角形の面積を求められます。<br>
+    ただ、ここでは余弦定理を使う方が簡単に求められます。<br>
+    何故だかわかりますか？<br>
+    どちらを使っても三角形の面積を求めることは可能ですが<br>
+    三角比で値を暗記しているものは、0°、30°、45°、60°、90°、…etc<br>
+    と、ほんの少しだけですよね。もしもsin52°とか試験中に出てきても値を求められないでしょう？<br>
+    正弦定理を使えば、２角の大きさがわかり、必然的にすべての角の大きさはわかります。<br>
+    ただ三角比の値が確実に求められるわけではないので、ここでは余弦定理を使ってもう一つの辺の長さを求めて<br>
+    三角形の面積の公式を使いましょう。<br>
+
+    (略1)<br>
+
+    三角形の辺の長さがすべて分かっていれば角度が何もわからなくても<br>
+    面積を求めることができる公式はありますが、また別の機会に紹介いたします。<br>
+
+    一通り三角比の使い方を学んできましたが、ここでもう一度東京タワーの高さを求めてみましょう。<br>
+    正直なところ、最初に高さを求めた時の条件ってかなり特殊な条件だったでしょう？<br>
+    今いる地点から、対象物までの正確な距離なんてほとんどわかりませんよね。<br>
+    今回は対象物までの距離が分からなくても高さを求めてみましょう。<br>
+
+    (図形の計量　図6)<br>
+
+    最初は、点Aの位置より、東京タワー(辺CD)を見ており<br>
+    その後点Bの地点まで移動して、再度東京タワーを視認しました。<br>
+    さて、三角形ACDを考えたとき、∠Cが直角のため辺AC、もしくは辺ADの長ささえ分かれば辺CD、つまり東京タワーの高さを求められます。<br>
+    それでは三角形ABCを考えてみましょう。<br>
+    ∠A、∠Bが分かっているので、∠Cも分かりますよね。そして辺ABの長さも分かっているとくれば辺ACを正弦定理を使って求められますよね。<br>
+    これで東京タワーの高さを求めることが出来ますね。計算していきましょう。<br>
+
+    (略2)<br>
+
+    いかがでしたでしょうか。三角比を紹介した当初よりは、現実的な求め方だったと思います。<br>
+    最初どのような分野かと思われた方も多いでしょうが、色々な図形の辺の長さ、角の大きさを求めるのに役立つ分野でした。<br>
+    他にもまだ紹介していない特性もありますが、それは今後数学を学んでいくと自然に出会うと思います。<br>
+    色々クセがあって面白い分野ですので、是非三角比を楽しんでみてください。<br>
+
+    </div>
+  </div>
+
+  <div id="cover"></div>
+
+<!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-2.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">図形の計量</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentText"><a href="#" class="css_btn_class">教程を見る</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程 終わり -->
+
+
+<section class="contentsWorks">
+
+  <section class="works">
+    <p>(1)</p>
+
+    </section>
+  <section class="works">
+    <p>(2)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+  <section class="works">
+    <p>(3)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+  <section class="works">
+    <p>(4)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+  <section class="works">
+    <p>(5)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+
+</section>
+
+
+<div class="tile-container">
+  <div class="tile css_btn_class" data-cta-target=".js-modal-1">解説を見る</div>
+</div>
+
+
+
+      <div class="js-modal-1 modal modal--1">
+          <span class="modal-close-btn"></span>
+    			<h1>解説ページ</h1>
+          <p>(1)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(2)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(3)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(4)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(5)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(6)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(7)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="../../../js/popup.js"></script>
+  <script src="../../../js/cta.js"></script>
+  <script>
+  var closeFn;
+  function closeShowingModal() {
+    var showingModal = document.querySelector('.modal.show');
+    if (!showingModal) return;
+    showingModal.classList.remove('show');
+    document.body.classList.remove('disable-mouse');
+    document.body.classList.remove('disable-scroll');
+    if (closeFn) {
+      closeFn();
+      closeFn = null;
+    }
+  }
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+    if (target.dataset.ctaTarget) {
+      closeFn = cta(target, document.querySelector(target.dataset.ctaTarget), { relativeToWindow: true }, function showModal(modal) {
+        modal.classList.add('show');
+        document.body.classList.add('disable-mouse');
+        if(target.dataset.disableScroll){
+          document.body.classList.add('disable-scroll');
+        }
+      });
+    }
+    else if (target.classList.contains('modal-close-btn')) {
+      closeShowingModal();
+    }
+  });
+  document.addEventListener('keyup', function (e) {
+    if (e.which === 27) {
+      closeShowingModal();
+    }
+  })
+  </script>
+
+</body>
+</html>

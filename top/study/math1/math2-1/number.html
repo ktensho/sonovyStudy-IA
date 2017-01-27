@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>sonovy | ソノビー　高校数学l 数と集合　実数</title>
+<link href="../../../css/phone.css" rel="stylesheet">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- swiper.jsの導入 -->
+<script src="../../../js/jquery-1.10.2.min.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+  	<div class="curriculum">
+      <!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-2.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">鋭角の三角比</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentWork"><a href="#" class="css_btn_class">問題を解く</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程　end -->
+
+  <div class="contentsWorks">
+
+    鋭角の三角比<br>
+
+    突然ですが皆さん、東京タワーの高さはご存じでしょうか。東京スカイツリーが出来るまで日本一高い自立型電波塔でした。<br>
+    今回学ぶ三角比を使っておおよその高さを出してみたいと思います。<br>
+
+    まず、東京タワーから999m離れた地点Pにいるとしましょう。<br>
+    そして、その地点にいたまま視点の高さを0に、<br>
+    つまり地面の高さで東京タワーの頂上Qを見たとします。(実際にやると変な目で見られるので気をつけましょう)<br>
+    すると、ちょうど、自分から3ｍ離れた地点に、高さ1ｍの看板があり、その頂点と東京タワーの頂点が重なりました。<br>
+    ここで東京タワーの地面に接している点を点R、<br>
+    看板の頂点を点S、地面と接している部分を点Tと置きます。<br>
+    すると、下記のような図になります。<br>
+
+    <img src="../../../img/2-1-1.pmg">
+
+    上図より、<br>
+
+    ∠QPR＝∠SPT…(1)<br>
+    ∠PRQ＝∠PTS…(2)<br>
+
+    (1)(2)より、２角が等しいので<br>
+
+    △PQR∽△PST<br>
+
+    相似な三角形は対応する辺の比が等しくなりますよね。<br>
+    ゆえに、以下が成り立ちます。<br><br>
+
+    1：3＝QR：999<br>
+    ⇔QR＝333<br>
+
+    よって東京タワーが333ｍであることが求められました。<br>
+    これが合っているかは調べてみてください。<br>
+<br>
+    さて、これだけで問題が解決するとただの相似の問題になります。<br>
+    ここで、下記の図のような、∠Aを共有している直角三角形について考えてみましょう。<br>
+
+    <img src="../../../img/2-1-2.pmg">
+<br>
+
+    △ABC、△AB'C'、△AB''C''、…<br>
+    こちらの三角形は相似なので、２辺の長さの比の値は常に一定になっていることが、お分かり頂けたでしょうか。<br>
+    具体的に式にしてみましょう。<br>
+
+    BC/AB=B'C'/AB'=B''C''/AB''=…<br>
+    AC/AB=AC'/AB'=AC''/AB''=…<br>
+    BC/AC=B'C'/AC'=B''C''/AC''=…<br>
+
+    そして、この三角形を定義したとき、出した条件は<br>
+    直角三角形であることと、∠Aを共有していることのみです。<br>
+    そのため、２辺の長さの比は∠Aの大きさによって決まります。<br>
+
+    一般に、△ABCの∠BACの大きさをAで表したとき、<br>
+
+    BC/ABの値をAの正弦、またはサイン(sine)、<br>
+    AC/ABの値をAの余弦、またはコサイン(cosine)、<br>
+    BC/ACの値をAの正接、またはタンジェント(tangent)<br>
+
+    といいます。<br>
+
+    それぞれ以下のように表します。
+<br>
+    sinA<br>
+    cosA<br>
+    tanA<br>
+<br>
+    これらをまとめて三角比とよんでいます。<br>
+<br>
+    この三角比を使えば、相似を使わなくとも<br>
+    先ほどの東京タワーの高さを求めることも可能でした。(∠QPRの大きさが分かればですが…)<br>
+    ∠QPRを∠Pとしたときに、下記式で求めることができます。<br>
+<br>
+    QR=PRtanP<br>
+<br>
+    tanPの値がすぐにわからなくとも以下の式変形よりQRになることは明らかです。<br>
+<br>
+    PRtanP=PR×QR/PR<br>
+    ⇔PRtanP=QR<br>
+
+
+    このように直角三角形の角度と１辺の長さがわかれば<br>
+    他の辺の長さも求めることが可能なのです。<br>
+
+    本当に、∠Aと一つの辺の長さがわかれば他の辺の長さがわかるの？？<br>
+    と、思われる方もいらっしゃると思いますので<br>
+    実際にやってみましょう。<br>
+
+    <img src="../../../img/2-1-3.pmg">
+
+    まず今回は、AB、AC、BCをそれぞれ次のように置き換えさせて頂きます。<br>
+
+    AB＝c<br>
+    AC＝b<br>
+    BC＝a<br>
+
+    こちらの置き換えは三角比の単元では<br>
+    よく使われる置き換え方なので、今回を機に慣れるよう意識してくださいね。<br>
+
+    さて、それでは三角比の定義より<br>
+
+    sinA=a/c<br>
+    cosA=b/c<br>
+    tanA=a/b<br>
+
+    これらを組み合わせれば以下のことが成り立ちます。<br>
+
+    a=csinA<br>
+    b=ccosA<br>
+    a=btanA<br>
+
+    ほら、∠Aといずれか一つの辺の長さがわかれば他の辺の長さもわかりましたよね。<br>
+    <br>
+    …………
+
+    するどい方からはツッコミの嵐が吹き荒れていそうですね…<br>
+
+    これだけだと、aの長さが分かっているだけでは他の辺の長さ出せないのではないか、と。<br>
+    でも、以下が成り立つので問題ないです。<br>
+
+    a/tanA=b…(1)<br>
+
+    直角三角形のため、当然、a>0，ｂ>0、となりますので<br>
+    tanA>0も成り立ちます。そのため今回tanA≠0のため両辺逆数をかけても問題ないため<br>
+    (1)は成り立ちます。<br>
+    そのため、∠Aとbの長さがわかっている場合も他の辺の長さがわかりますね。<br>
+
+    ただ、tanAの逆数をかけてもいいか不安だった方で、以下のことに気がついた方がいらっしゃるのではないでしょうか。<br>
+    b=atanB<br>
+
+    いやいや何故∠Bが出てきたんだ、しかも∠Bの大きさなんてわからないじゃないか！！<br>
+
+    そう怒らないでください。一度深呼吸でもして冷静に考えてみましょう。<br>
+    今回の△ABCは∠Aがわかっていて、尚且つ、直角三角形です。<br>
+    そして三角形の角の和は180°ですよね。よって∠Bの大きさも確定します。<br>
+
+    <img src="../../../img/2-1-4.pmg">
+<br>
+
+    上図のように回転させればより見やすいですかね。<br>
+    ∠Bに注目すれば三角比は以下のようになります。<br>
+
+    sinB=b/c<br>
+    cosB=a/c<br>
+    tanB=b/a<br>
+
+    また、三角形の角の和は180°より以下も成り立ちます。<br>
+
+    ∠A＋∠B+∠C＝180<br>
+
+    図より∠C＝90のため<br>
+    ∠A+∠B+90＝180<br>
+    ⇔∠A+∠B+＝90<br>
+    ⇔∠B+＝90-∠A<br>
+
+    そのため、∠Bに注目した三角比は∠Aを用いて以下のように表せます。<br>
+
+    sin(90-A)=b/c<br>
+    cos(90-A)=a/c<br>
+    tan(90-A)=b/a<br>
+
+    また、∠Aに注目した三角比は以下でしたよね？<br>
+
+    sinA=a/c<br>
+    cosA=b/c<br>
+    tanA=a/b<br>
+
+    これらを組み合わせると次のことが成り立つことがわかります。<br>
+
+    sin(90-A)=cosA<br>
+    cos(90-A)=sinA<br>
+    tan(90-A)=1/tanA<br>
+
+    上記の3つの公式は覚えていると便利な場面が多いので是非覚えてください。<br>
+    少なくとも、今の流れだけでも覚えて、いつでも成り立つことを証明できるようにしておきましょう。<br>
+
+
+    それでは最後に三角比の相互関係についてお話したいと思います。<br>
+    三角比とは便利なもので、sinA、cosA、tanAのいずれかの値がわかっていると<br>
+    他の二つの値も求めることができます。<br>
+
+    さて、まずおさらいですが、tanAの定義は下記です。<br>
+
+    tanA=a/b<br>
+
+    そして先ほど次の二式が成り立つことはお話しましたよね。<br>
+
+    a=csinA<br>
+    b=ccosA<br>
+
+    上記二式をそれぞれ代入してみましょう。<br>
+
+    tanA=a/b<br>
+    ⇔tanA=csinA/ccosA(a=csinA、b=ccosAを代入)<br>
+    ⇔tanA=sinA/cosA…(2)<br>
+
+    それでは少し視点を変えてみましょう。<br>
+    この△ABCは直角三角形です。<br>
+    %それでは三平方の定理、a=csinA、b=ccosA、より、<br>
+
+    \begin{eqnarray*} <br>
+    &a^2+b^2&=c^2\\<br>
+    ⇔&(csinA)^2+(ccosA)^2&=c^2\\<br>
+    ⇔&(sinA)^2+(cosA)^2&=1\\<br>
+    ⇔&sin^2A+cos^2A&=1…(3)\\<br>
+    \end{eqnarray*}<br>
+
+
+    一般的に三角比の二乗は下記のように表します。<br>
+<br>
+    \(sin^2A\)<br>
+    \(cos^2A\)<br>
+    \(tan^2A\)<br>
+
+    もしも<br>
+
+    \(sinA^2\)<br>
+
+    と書いてしまうと、∠Aの値を二乗していることになるので注意しましょう。<br>
+
+    さて、(3)より<br>
+
+    \(sin^2A+cos^2A=1\)<br>
+    \(⇔sin^2A/cos^2A+1=1/cos^2A\)<br>
+
+    (2)を代入して<br>
+    \(tan^2A+1=1/cos^2A…(4)\)<br>
+
+
+    (2)(3)(4)が、三角比の相互関係式となります。<br>
+    こちらの公式もかなり重要ですので覚えてくださいね、<br>
+    もちろん公式の証明もいつでも出来るようにしておきましょう。<br>
+
+    さて、三角比について初めての学習となりましたが如何でしたか。<br>
+    今までとは違った視点から三角形へのアプローチだったと思います。<br>
+    こちらの扱いに慣れてしまえば、<br>
+    今までとは比べものにならないぐらい三角形のことを上手く扱うことが出来るようになります。<br>
+    また、三角比ならではの特性もあるので、そちらも楽しみながら学習していきましょう。<br>
+
+
+
+
+    </div>
+  </div>
+
+  <div id="cover"></div>
+
+<!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-2.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">鋭角の三角比</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentText"><a href="#" class="css_btn_class">教程を見る</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程 終わり -->
+
+
+<section class="contentsWorks">
+  2-1鋭角の三角比<br><br>
+  以下の三角形がある時、<br>
+
+  \(\sin \alpha ,\cos \alpha ,\tan \alpha\)<br>
+  \(\sin \beta ,\cos \beta ,\tan \beta\)<br><br>
+
+
+
+
+
+  2-1鋭角の三角比2<br><br>
+
+  以下の値を求めよ。<br><br>
+
+  \(\sin 30,\cos 30\)<br>
+ \(\sin 45,\cos 45\)<br>
+  \(\sin 60,\cos 60\)<br>
+</section>
+
+
+<div class="tile-container">
+  <div class="tile css_btn_class" data-cta-target=".js-modal-1">解説を見る</div>
+</div>
+
+
+
+      <div class="js-modal-1 modal modal--1">
+          <span class="modal-close-btn"></span>
+          <div class="contentsA">
+    			<h1>解説ページ</h1>
+          <p>(1)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(2)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(3)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(4)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(5)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(6)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(7)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+
+</div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="../../../js/popup.js"></script>
+  <script src="../../../js/cta.js"></script>
+  <script>
+  var closeFn;
+  function closeShowingModal() {
+    var showingModal = document.querySelector('.modal.show');
+    if (!showingModal) return;
+    showingModal.classList.remove('show');
+    document.body.classList.remove('disable-mouse');
+    document.body.classList.remove('disable-scroll');
+    if (closeFn) {
+      closeFn();
+      closeFn = null;
+    }
+  }
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+    if (target.dataset.ctaTarget) {
+      closeFn = cta(target, document.querySelector(target.dataset.ctaTarget), { relativeToWindow: true }, function showModal(modal) {
+        modal.classList.add('show');
+        document.body.classList.add('disable-mouse');
+        if(target.dataset.disableScroll){
+          document.body.classList.add('disable-scroll');
+        }
+      });
+    }
+    else if (target.classList.contains('modal-close-btn')) {
+      closeShowingModal();
+    }
+  });
+  document.addEventListener('keyup', function (e) {
+    if (e.which === 27) {
+      closeShowingModal();
+    }
+  })
+  </script>
+
+</body>
+</html>

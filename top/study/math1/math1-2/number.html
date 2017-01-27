@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+<title>sonovy | ソノビー　高校数学l 数と集合　実数</title>
+<link href="../../../css/phone.css" rel="stylesheet">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- swiper.jsの導入 -->
+<script src="../../../js/jquery-1.10.2.min.js"></script>
+<script src="../../../js/fakeLoader.min.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../../../css/fakeLoader.css">
+
+<script src="../../js/bootstrap.min.js"></script>
+<link href="../../../css/animate.css" rel="stylesheet">
+</head>
+<body>
+  <div id="fakeLoader"></div>
+
+<div class="curriculum">
+
+  <div class="contentsTitleMath1">
+    <p class="contentsTitleMath1Company">Sonovy</p>
+    <p class="contentsTitleMath1Curriculum animated fadeInRight">数学I 教程</p>
+    <p class="contentsTitleMath1SubjectTheme animated fadeInRight">集合</p>
+  </div>
+
+  <div class="contentsIndexMarh1">
+    <p class="contentsTitleMath1Index">目 次</p>
+
+    <ul>
+      <li class="contentsTitleMath1Parerent">1.集合とは
+      <li class="contentsTitleMath1Parerent">2.集合の概要
+        <ul>
+          <li class="contentsTitleMath1Child">-ド・モルガンの法則
+          <li class="contentsTitleMath1Child">-背理法
+        </ul>
+      <li class="contentsTitleMath1Parerent">3.集合のまとめ
+    </ul>
+  </div>
+
+  <p class="contentsTitleMath1Index">1.集合とは</p>
+
+  <div class="contentsWorks">
+    2つ目の講では、集合と論証について話していこうと思います。<br>
+    この講に入る前に言っておきたいことは、ややこしい計算などは出てきません。<br>
+    ただ、高校数学を学習していくうえで最も重要な単元です。<br>
+    なにが、重要なのでしょう。。。<br>
+    ずばり、ここで求められる考え方すべてが高校数学の問題を解いていく上で必要とされるからです。<br>
+    問題文では何を聞かれているのか。採点者にどのように伝えればよいのか。など、<br>
+    すべての単元で「点数をとっていく」ためにはじっくり学習して欲しい単元です。<br>
+    少しイントロが長くなってしまいましたが早速、「集合」のお話に入りましょう。<br>
+
+
+    第一講で「実数」についてはマスターしてもらえたと思いますが、<br>
+    集合の単元では、実数のような特定の性質（この場合は存在するすべての数字ということ）<br>
+    をもつもの全体の集まりを「集合」とよび、その集合を構成する個々のものを集合の「要素」<br>
+    とよびます。さらに言うと、aが集合Aの要素である場合、aは集合Aに属する<br>
+    といいます。具体的に説明すると、整数（a）は実数(A)という集合に属しています。<br>
+    また、整数（a）は有理数（B）という集合にも属すると言えます。<br>
+    ただし、整数（a）は無理数（C）という集合には属しません。<br>
+    これを記号を使い表すとこうなります。<br>
+    <p class="func">
+    \(a\in A\)<br>
+    \(a\in B\)<br>
+    \(a\notin c\)<br>
+</p>
+
+
+    次に集合の表し方について書いていきます。
+
+    方法は2つあります。<br><br>
+
+    ①｛｝のなかに、要素を書き並べていく。<br>
+    ②｛｝のなかに、要素を満たす性質を書く。<br>
+
+    具体的に見ていきましょう。<br>
+    ①の場合<br>
+    ｛3.6.9.12.15.....｝<br>
+    ②の場合<br>
+    ｛x｜xは3の正の倍数｝<br>
+
+    主に②が問題や文章で使われますが、<br>
+    ②を①に書き換えるのが問題（ここの問題というのはすべての単元の問題）を解いていくうえで<br>
+    大切です。②を①に書き換えるというのは、つまり「具体的に書き出す」ということです。<br>
+    この癖をつけることが問題を解いていく上で必要な感覚が養われていくと思います。<br>
+    問題を読んでもうまく理解できない時や、実際解き終わったあとの確認の際に<br>
+    一回具体的に書き出す作業をしてみましょう。<br>
+    この集合の単元ではその作業を要する問題が多いのでここをしっかり学習することは<br>
+    イントロの部分と重なりますが、全単元につながっていくはずです。<br>
+
+    <p class="contentsTitleMath1Index">2.集合の概要</p>
+
+    さて、ここからはより具体的な数字を使い、集合を考えていきましょう。<br><br>
+
+    A＝｛x｜xは3の正の約数｝<br>
+    B＝｛x｜xは6の正の約数｝<br>
+
+    この表記の場合はまずは実際に書き出してみましょう。<br>
+
+    A＝｛1.3｝<br>
+    B＝｛1.2.3.6｝<br>
+
+    具体的に書き出すと視覚的にも集合A,Bの大きさが分かりました。<br>
+    そしてAの要素は全てBの要素の一部だということも分かります。<br>
+    この時、AはBの「部分集合」とよび、\(A\subset B\)と表します。<br>
+    また、AはBに「含まれる」。BはAを「含む」といいます。<br>
+    そして、すこし疑問を持たれるかもしれませんがA自身もAの部分集合といいます。<br>
+    また、ここは暗記してもらう部分ですが、要素を一つも持たない集合を空集合øと呼び、<br>
+    空集合はすべての集合の部分集合と考えます。<br>
+    つまり、集合Aの部分集合は｛1.3｝｛1｝｛3｝øとなります。<br>
+
+    どうでしょうか。全て書き出す癖が必要そうな気がしませんか？<br>
+    この段階では集合自体も小さくまた、ひとつの集合しか考えていないので頭の中で<br>
+    容易に考えられるかもしれませんがここからは複数の集合について見ていきましょう。<br>
+
+  \(  A＝｛1.2.3｝\)<br>
+  \(  B＝｛3.4.5｝\)<br>
+
+    この集合A．Bについて考えていきます。<br>
+    このとき、A．Bに共通している「3」という要素を集合ABの「共通部分」<br>
+    少なくとも一方に属している「1.2.3.4.5」という要素を集合ABの「和集合」といいます。<br>
+
+    そして共通部分を\(A\cap B\)<br>
+    和集合を\(A\cup B\)<br>
+    と表します。<br>
+
+    <p class="contentsTitleMath1Index">ド・モルガンの法則</p>
+
+
+    ここまでは序の口です。この考え方を応用し<br>
+    「ド・モルガンの法則」について説明していきます。<br>
+
+    ここでもう一つ必要な考え方として、「補集合」という考え方が必要です。<br>
+    1桁の自然数を集合U<br>
+    とすると、\(U＝｛1.2.3.4.5.6.7.8.9｝\) と書き表せられます。<br>
+    集合を考える場合、あらかじめ1つの集合Uを定めた上で、その部分集合を考えることが多いです。<br>
+    そしてこの集合Uのことを「全体集合」とよびます。<br>
+    全体集合のうち部分集合Aを今回は<br>
+    \(A＝｛2.4.6.8｝\)と定めます。<br>
+    するとこの集合Uうち部分集合Aに属さない要素を集合Aの「補集合」といい\(\bar{A}\)<br>
+    と表します。<br>
+    具体的に表すと\(\bar{A}＝｛1.3.5.7.9｝\)となります。<br>
+    実際書き出すと何も問題はないと思います。<br>
+
+    この考え方を先ほどの「和集合」、「共通部分」をつかって考えてみましょう。<br>
+    \(A\cup \bar{A}=U\)<br>
+  \(  A\cap \bar{A}=\phi\)<br>
+  \(  \bar{\bar{A}}=A \)<br>
+
+    このことが成り立つとわかります。<br>
+
+    もう少し複雑にしてみましょう。<br>
+    1桁の自然数の集合Uがあり、<br>
+    A＝｛2.4.6.8｝<br>
+    B＝｛1.2.3.4.5｝<br>
+    の部分集合について考えていきます。<br>
+
+  \(  A\cap B=｛2.4｝\)<br>
+  \(  \bar{A\cap B}=｛1.3.5.6.7.8.9｝\)<br>
+  \(  \bar{A}\cup \bar{B}=｛1.3.5.6.7.8.9｝\)<br>
+
+    以上のことが成り立ちます。<br>
+    どうでしょうか。複数の集合が混じっているのと、馴染みがない記号で少し戸惑うかもしれませんが、<br>
+    「書き出す」ということ、忘れずにやってもらえれば難しいことはないと思います。<br>
+<br>
+    これを法則として示すと以下のようになります。<br><br>
+
+    ①　\(\bar{A\cup B}=\bar{A}\cap \bar{B}\)<br>
+    ②　\(\bar{A\cap B}=\bar{A}\cup \bar{B}\)<br>
+
+
+    以上を「ド・モルガンの法則」と示します。<br>
+
+    なにやら一見ややこしくは見えますが、一つ一つこなしてください。<br>
+    暗記する必要は全くありません。感覚として身につくまで、ひたすら書き出すことが<br>
+    他の単元でも生きてくるはずです。<br>
+    ここまでで、「集合」のお話は終わりです。<br>
+    新しい考え方ももちろん出てきましたが、基本的に一番大事なことは何度も言います。<br>
+    「具体的に書き出す」ということ、です。<br>
+    この癖をここでしっかり身につけてください。<br>
+
+    <p class="contentsTitleMath1Index">背理法</p>
+
+    それでは次の単元、「論証」の話をしていきましょう。<br>
+    まずはそもそもの単語から話をしていきますね。<br>
+
+    ①\(x\)が自然数であれば、xは正の数である。<br>
+    ②\(x^2+2x+1=0\)ならば\(x=1\)である。<br>
+    ③数学は楽しい。<br>
+
+    ①～③のように、ひとつの判断を示した文や式で、それが正しいか正しくないかで定まるものを<br>
+    「命題」といいます。<br>
+    命題が正しい場合、その命題は「真」であるといい、正しくない場合、その命題は「偽」であるといいます。<br>
+    ③のような例は、楽しいといってほしいですが（笑）正しいとも正しくないとも言えないので<br>
+    命題とは言えません。<br>
+
+    つまり、①の命題は真で、②の命題は偽ということが判断できると思います。<br>
+    もう少し単語の話が続きます。<br>
+    「x＞0」という式は変数xの値が定まることで初めて真偽が定まります。<br>
+    このような文や式のことを「条件」といいます。普通この条件はp,qを用いて<br>
+    「p⇒q」という風に表し、「pならばq」とよびます。<br>
+    このときpをこの命題の「仮定」、qを「結論」といいます。<br>
+
+    では、さきほどの集合の話といま説明した単語たちを混ぜて例を示していきましょう。<br>
+
+    「xが3の約数」（p）ならば「xは6の約数」（q）である。という命題について考えていきましょう。<br>
+    3の約数という集合をP、6の約数という集合をQとすると<br>
+    P＝｛1,3｝<br>
+    Q＝｛1,2,3,6｝<br>
+    と要素を具体的に書き出しました。<br>
+    すると \(P\in Q\)<br>
+    が成り立つことがわかります。<br>
+    一般に「p⇒q」が真のとき　\(P\in Q\)<br>
+    が成り立ちます。逆にいうと、\(P\in Q\)<br>
+    が成り立つ時、「p⇒q」が成り立つことがわかります。<br>
+    これ自体が命題になっていますが、理解できたでしょうか。<br>
+    これは命題が真の場合に成り立ちかつ、命題が真だという証明でもあります。<br>
+
+    続いて、命題が偽の場合について考えていきます。<br>
+    p：-2<x<4  <br> q:0<x<5   <br>
+    このときのp⇒qの命題について考えてみましょう。<br>
+    （図）
+    このときpの条件がqの条件にすべて含まれていないので<br>
+    命題自体は偽ということになります。<br>
+    また、qに含まれていないpの部分。つまりここでは、-2~0の部分のことを<br>
+    「反例」といいます。<br>
+    逆にいうと「反例がある」ということは、その命題は偽である。ともいえますね<br>。
+
+    条件についてさらに詳しく見ていくことで、「論証」をより論理的に捉えていけるので説明していきます。<br>
+    ある命題「p⇒q」が真の時pはqであるための「十分」条件といい<br>
+    qはpであるための「必要」条件であるといいます。<br>
+    もう少し日本語っぽくいうと、qになるためにはpであれば、「十分」であり、pになるためにはqが「必要」<br>
+    である。ということです。<br>
+
+    もう少し具体的に話していきましょう。<br>
+    p：10の倍数、q：5の倍数<br>
+    この時「p⇒q」は真です。<br>
+    5の倍数であることは、10の倍数であれば十分ですが、10の倍数であることは、5の倍数であることが必要です。これなら、さっきのよりもわかりやすいと思います。<br>
+
+    そしてもう少し踏み込んで、逆の命題について考えてみましょう。<br>
+    「q⇒p」は偽ですね。反例は5や15などたくさんあります。<br>
+    これで、pはqであるための十分条件であるが、必要条件ではないことがわかります。<br>
+
+    \(p：x^2-2x+1=0\) <br>
+     \(q:x=1\)<br>
+    この命題はどうでしょうか。<br>
+    「p⇒q」「q⇒p」ともに真ですね。<br>
+    この場合必要条件でもあり、十分条件であるので「必要十分」条件である言います。<br>
+    また、「同値」であるともいい、「p⇔q」と表します。<br>
+
+    さらに集合と絡めて条件について見ていきましょう。<br>
+    ある条件pについて、「pでない」というのも条件であり、これをpの「否定」といい、\(\bar{p}\)<br>
+    と表現します。つまりはpの補集合というわけですね。<br>
+    条件p,qについて考えると、pもqも満たすとき、「pかつq」も条件となり<br>
+    これは、全体集合Uにおいて、条件pと条件qを部分集合P,Q<br>
+    とすると、「pかつq」の集合は　\(P\cap{Q}\)<br>
+    と表せます。<br>
+    また、「pまたはq」も条件であり、同様にこの集合は　\(P\cup{Q}\)<br>
+    と表します。<br>
+    集合のように考えてもらえればなにも問題はないと思います。<br>
+    「否定」は補集合、「かつ」は共通部分、「または」は和集合です。<br>
+
+    ここまで来れば、条件については問題ないでしょう。<br>
+    最後に、命題について詳しく見ていきたいと思います。<br>
+    「p⇒q」の命題について仮定と結論を入れ替えた命題のことを「逆」といいます。<br>
+    「q⇒p」のことです。<br>
+    また、\(「\bar{p}⇒\bar{q}」\)のことを、「裏」といい、<br>
+    その「逆」、つまり「\(\bar{q}⇒\bar{p}\)」のことを「対偶」といいます。<br>
+    ここの説明で何が言いたいのか結論から述べると、「もとの命題とその対偶の真偽は一致する」ということです。<br>
+    どういうことか具体的にみていきましょう。<br>
+    「\(x＞１⇒x＞-３\)」という真の命題に対して<br>
+    「逆」は「\(x＞-３⇒x＞１\)」<br>
+    「裏」は「\(x\leq1⇒x\leq-3\)」<br>
+    「対偶」は「\(x\leq-3⇒x\leq1\)」<br>
+    とあらわせます。<br>
+    対偶の命題は真になっていますね。<br>
+    もうひとつ、逆や裏の命題は必ずしももとの命題の真偽と一致するとは限りません。<br>
+    最後に図にて関係図をまとめてここの話を終わらせてもらいます。<br>
+<br>
+    （図）
+
+    論証の単元の最後に「背理法」という、証明方法を説明してこの単元を締めくくらせていただきます。<br>
+    まず、背理法とは、「与えられた命題がなりたたないと仮定し、その仮定のもとで矛盾が生じれば、<br>
+    もとの命題は真である」という結論にもっていく証明方法です。<br>
+    実数の部分と絡めて、\(\sqrt{2}\)が無理数であることを証明していきたいと思います。<br>
+
+    まずは\(\sqrt{2}\)が無理数でない、つまり有理数であると仮定すると、<br>
+    \(\sqrt{2}\)は有理数なので、１以外の公約数をもたない自然数\(m,n\)を用いて<br>
+    \(\sqrt{2}=\frac{m}{n}…①\)<br>
+    と表せられる。<br>
+    ①より、\(\sqrt{2}n=m\)<br>
+    両辺を２乗して、\(2n^2=m^2…②\)<br>
+    ②より、\(m^2\)は偶数であるから、\(m\)も偶数である。<br>
+    つまり$m$はある自然数$k$をもちいて、m=2kと表すことができる。<br>
+    これを②に代入すると、\(2n^2=4k^2\)<br>
+    \(n^2=2k^2\)であるから、$n$も偶数であるといえる。<br>
+    以上のことから、m,nともに偶数であるので、これは\(m,n\)が１以外の公約数をもたないということに矛盾しているので\(\sqrt{2}\)は有理数ではない。<br>
+    つまり、無理数である。<br>
+
+    <p class="contentsTitleMath1Index">3.集合のまとめ</p>
+
+
+    どうでしょうか。以上が背理法による証明の例です。<br>
+    論証の考え方をほかの単元で活かすという典型的な例のひとつです。<br>
+    この他にも、感覚的に必要条件なのか十分条件なのか、「かつ、または」などを<br>
+    使っていくことが、問題文を理解する、または問題を解いていくうえで非常に重要になっていきます。<br>
+    理解し感覚となっていくまではひたすら具体例をあげ実際に書き出していきましょう。<br>
+    ながくなりましたが、これで集合と論証の単元は終わりです。<br>
+    ありがとうございました。<br>
+
+    </div>
+  </div>
+  <footer>
+    Copyright&copy;2017 合同会社園部出版 All Rights Reserved.
+  </footer>
+
+
+  <script src="../../../js/popup.js"></script>
+  <script src="../../../js/cta.js"></script>
+  <script>
+  var closeFn;
+  function closeShowingModal() {
+    var showingModal = document.querySelector('.modal.show');
+    if (!showingModal) return;
+    showingModal.classList.remove('show');
+    document.body.classList.remove('disable-mouse');
+    document.body.classList.remove('disable-scroll');
+    if (closeFn) {
+      closeFn();
+      closeFn = null;
+    }
+  }
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+    if (target.dataset.ctaTarget) {
+      closeFn = cta(target, document.querySelector(target.dataset.ctaTarget), { relativeToWindow: true }, function showModal(modal) {
+        modal.classList.add('show');
+        document.body.classList.add('disable-mouse');
+        if(target.dataset.disableScroll){
+          document.body.classList.add('disable-scroll');
+        }
+      });
+    }
+    else if (target.classList.contains('modal-close-btn')) {
+      closeShowingModal();
+    }
+  });
+  document.addEventListener('keyup', function (e) {
+    if (e.which === 27) {
+      closeShowingModal();
+    }
+  })
+  </script>
+
+    <script type="text/javascript">
+        $("#fakeLoader").fakeLoader();
+    </script>
+
+    <script type="text/javascript">
+    $("#fakeLoader").fakeLoader({
+
+            timeToHide:5000, //Time in milliseconds for fakeLoader disappear
+            zIndex:999, // Default zIndex
+            spinner:"spinner6",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+            bgColor:"#2ecc71", //Hex, RGB or RGBA colors
+    });
+     </script>
+</body>
+</html>

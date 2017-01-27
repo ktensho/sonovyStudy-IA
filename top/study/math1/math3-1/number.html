@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>sonovy | ソノビー　高校数学l 数と集合　実数</title>
+<link href="../../../css/phone.css" rel="stylesheet">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- swiper.jsの導入 -->
+<script src="../../../js/jquery-1.10.2.min.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+  	<div class="curriculum">
+      <!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-2.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">二次関数とグラフ</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentWork"><a href="#" class="css_btn_class">問題を解く</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程　end -->
+
+  <div class="contentsWorks">
+
+    二次関数とグラフ<br>
+
+皆さん何気なく使っていると思いますが、グラフって何ですか？<br>
+そもそも関数って何でしょうか。少しだけ考えてみましょうか。<br>
+
+一つ例を挙げて考えてみましょう。<br>
+300L入る浴槽にお湯を毎分30Lずつ入れていき、満水になったら止める。<br>
+このとき、お湯を入れ始めてからx分後の浴槽の湯量をyLとすると、①と表される。<br>
+
+y=30x…①<br>
+
+ただ、10分経過すると浴槽は満水になるので<br>
+
+0≦x≦10…②<br>
+
+の範囲で考える。<br>
+
+では、このとき座標平面上で②の範囲で点を打ってみましょう。<br>
+
+<img src="../../../img/3-1.png"><br>
+
+点を打ち続けると下図のようになります。<br>
+
+<img src="../../../img/3-2.png"><br>
+このように関数に対応する無数の点を打ち続けて線になったものがグラフとなります。<br>
+そして、二つの対応する変数について、片方の値が決まると、もう一方の値も決まるようなものが、関数と呼ばれています。<br>
+念のため関数の定義も確認してみましょう。<br>
+
+一般的に、二つの変数xとyがり、xの値を定めるとそれに対応してｙの値がただ一つ定まるとき、yはxの関数である。<br>
+
+いかがでしょう、少しは関数やグラフについて見直しが出来ましたか？<br>
+それでは高校数学で関数を扱う時に使う表現や定義を紹介していきたいと思います。<br>
+
+まずは関数と聞いて思い浮かべる形は、先ほども何気なく使いましたが以下の形ですよね。<br>
+
+y=30x<br>
+
+もちろんこの形も使いますが、高校数学からは次のように表現することがあります。<br>
+
+f(x)=30x<br>
+
+上記二点より当然次のように表せます。<br>
+
+y=f(x)<br>
+
+どちらも扱うことはありますが、何が違うかと言われると、とらえ方が異なる程度です。<br>
+何故新しくこの形式を扱うようになったかは、<br>
+「yはxの関数である」を英語で"y is a function of x"と言います。<br>
+この英語の部分を数学では略して<br>
+
+y=f(x)<br>
+
+と表します。このように考えていくと紹介する順番が逆したね。<br>
+最初は分かりにくければ、「ｙの代わりにf(x)を使う」ぐらいで覚えておけば大丈夫です。<br>
+慣れてくれば違和感なく計算できるので、色々関数の問題に触れていってくださいね。<br>
+
+また、②のように変数に範囲がある場合がありますよね。この時のxの範囲を定義域と言います。<br>
+そして、xの範囲が決まれば当然ながらyの範囲も決まりますよね。<br>
+このときのyの範囲を値域と言います。<br>
+よくこの表現も使われますので、是非覚えて、慣れてください。<br>
+
+それでは、関数の中でも二次関数についてお話いたしましょう。<br>
+まずは、二次関数ってどのような式でしたか？一番基本となる式で考えていきましょう。<br>
+
+\(y=x^2…③\)<br>
+
+では、対応する点をいくつか座標平面上に打っていきましょう。<br>
+
+<img src="../../../img/3-3.png"><br>
+
+A(1,2)<br>
+B(-1,2)<br>
+C(2,4)<br>
+D(-2,4)<br>
+E(3,9)<br>
+F(-3,9)<br>
+
+点A～点Fは計算すれば当然分かりますが、③の二次関数上にある点です。<br>
+それでは、点を結んでグラフを描いてみましょう。<br>
+
+<img src="../../../img/3-4.png"><br>
+
+と、ほとんどの方がこんな流れで放物線を学びましたよね。<br>
+ただ、①のような関数であれば、直線になることは容易に理解出来ますが、<br>
+③のグラフが何故放物線になることが分かるのでしょうか。<br>
+二次関数を習い始めた頃、次のように点と点を結んだ方はいらっしゃるのではないでしょうか。<br>
+
+<img src="../../../img/3-5.png"><br>
+
+特に何も意識しなければ、このように点を結ぶのが自然だと思います。<br>
+そして、正直に申し上げると、これまでの知識で、何故二次関数が放物線のような曲線を描くかを<br>
+証明することが、対応する点を無数に打つ以外出来かねます。<br>
+どうしても気になる方は、微分積分の分野を学習していただければ、<br>
+無数の点を打たずとも美しい放物線を描くことを証明できますので、興味が出た方は進んで学習してみてください。<br>
+
+それでは、二次関数のグラフについてもう少し掘り下げていきたいと思います。<br>
+
+まずはスタンダートに下記の形から。<br>
+
+\(y=ax^2…④\)<br>
+
+このとき、aの値によって、グラフの形がおおよそ定まります。<br>
+
+まずは、a＞0のとき、x^2＞0より、下図のような下に凸の放物線になります。<br>
+
+<img src="../../../img/3-6.png"><br>
+
+この範囲ではaの値が大きいほど、急なカーブを描く放物線となり、<br>
+逆にaの値が小さいほど、緩やかなカーブを描く放物線となります。<br>
+
+次に、a＜0のとき、x^2＞0より、下図のような上に凸の放物線になります。<br>
+
+<img src="../../../img/3-7.png"><br>
+
+今度は、aの値が大きくなるほど、緩やかなカーブを描く放物線となり、<br>
+aの値が小さくなるほど、急なカーブを描く放物線になります。<br>
+
+最後に、a=0のときは、当然ながら、y=0となりますので、下図となります。<br>
+
+<img src="../../../img/3-8.png"><br>
+
+さて、aがいかなる値をとるときも、共通するものがあると思います。<br>
+どの放物線、または直線も、<br>
+
+x=0<br>
+
+こちらの直線を基準として、左右対称になっていますよね。<br>
+二次関数で描ける放物線は必ず、左右対称となります。<br>
+この何気ない当たり前の性質が、意外と見落としがちで<br>
+ふとしたときに、役立つことがあります。<br>
+
+そして、今回の、「x=0」のように放物線をちょうど真っ二つにする<br>
+中線を、「放物線の軸」とよびます。<br>
+また、この放物線の軸と、対象の放物線の交点を<br>
+「放物線の頂点」とよびます。<br>
+
+基本的に二次関数の問題では、<br>
+最初に、頂点を求め、軸も明らかにすることからすべてが始まっていきます。<br>
+問題によっては、頂点や軸を求めずに、最初から、違う事を問う問題もあります。<br>
+ただ、それでも一度、頂点と軸を求めることを癖つけてください。<br>
+手間かもしれませんが、この頂点と軸を明らかにすることにより、<br>
+わかってくることがたくさんあります。<br>
+二次関数が苦手な方、まずはここから始めていきましょう。<br>
+きっと二次関数のことがよく見えてくるようになっていきます。<br><br>
+
+大げさに言いましたが、先ほどの④の形の二次関数であれば、容易に頂点と軸がわかります。<br>
+では、次の二次関数の頂点と軸は求めることができますか？<br>
+
+\(y=ax^2+2ax+c…A\)<br>
+
+こうなると今までの二次関数のようには行きませんね。<br>
+今までは、頂点が点(0,0)に固定されていたものだけを考えてきましたが、<br>
+明らかにそう簡単な話で済むような、二次関数ではないことを感じたのではないでしょうか。<br>
+しかし、Aのような二次関数でも慣れてしまえばあっという間に頂点を求められるようになります。<br><br>
+ここでは、逆に、頂点を先に動かして考えてみましょう。<br>
+そうすれば自然とどのように式変形すれば良いか見えてきます。<br>
+
+④のグラフを、<br>
+x方向に+p<br>
+y方向に+q<br>
+だけ、平行移動した二次関数Cを求めてみましょう。<br>
+
+ここで④のグラフ上を通る任意の点、(x,y)が、二次関数C上の(X,Y)に移動したと考えてみましょう。<br>
+図に表すと以下のイメージです。<br>
+
+<img src="../../../img/3-9.png"><br>
+
+図を見て頂ければ、理解出来ると思いますが、<br>
+以下の関係式が成り立ちます。<br>
+
+X=x+p<br>
+Y=y+q<br>
+
+じゃあ、このXとYの値を④に代入すれば…<br>
+と、思ったあなた！少し待ってください。<br><br>
+点(X,Y)は④上にありませんよね？<br>
+そのため、このままでは二次関数Cは求めることができません。<br>
+なので次のように変形しましょう。<br>
+
+x=X-p<br><br>
+y=Y-q<br>
+
+この形であれば、④に代入できますね。代入してみましょう。<br>
+すると、次のようになります。<br>
+<br>
+　\(Y-q=a(X-p)^2\)<br>
+⇔\(Y=a(X-p)^2+q…⑤\)<br>
+⇔\(Y=aX^2-2paX+p^2+q…⑥\)<br>
+
+いきなりこのような式見せられて、結局何を言いたいんだと思われた方もいるでしょう。<br>
+そして、⑥はともかく、⑤のような中途半端な段階をわざわざピックアップして、一体何をしているんだと理解に苦しむ方もいるかもしれません。<br>
+では、ここで頂点について注目してみましょう。<br>
+④の頂点は、点(0,0)ですよね。<br>
+⑤も⑥も、④を、「x方向に+p」、「y方向に+q」移動させた二次関数なので<br>
+⑤と⑥の頂点は、点(p,q)となることがわかると思います。<br>
+ここまで言えばお気付きになった方もいるかと思いますが、<br>
+⑤の段階で止めると、pとqの値が目に見えやすいと感じませんか？<br>
+いまいちピンと来ていない方のために、具体例を考えてみましょう。<br>
+
+(p,q)=(1,2)だったと仮定します。aについては、a=2だったとします。<br>
+⑥の場合、a、p、qにそれぞれ代入して計算すると<br>
+
+\(Y=2X^2-4X+3\)<br>
+
+しかし、⑤の場合であれば<br>
+
+\(Y=2(X-1)^2+2\)<br>
+
+どうですか？⑤の、pとqの値が、頂点であることを知ってさえいれば<br>
+頂点が(1,2)となることが一目で分かりますよね？<br>
+そのため、この⑤の形こそが二次関数の頂点を求める最良の形であることがわかります。<br>
+また、x=pが放物線の軸になることもわかります。<br>
+
+このことを踏まえた上で、改めて、Aの二次関数を見てみましょう。<br>
+
+\(y=ax^2+2ax+c…A\)<br>
+
+もうどのような形になれば、頂点が求めることが出来るかは分かったと思いますが、<br>
+なかなか上手く計算出来ないですよね。おそらく計算が上手く出来ない理由は、<br>
+
+\(a(X-p)^2\)<br>
+
+この部分が上手く表せないからではないでしょうか。<br>
+ここで詰まっているのであれば、恐れずに一度手を動かしてみましょう。<br>
+
+　\(y=ax^2+2ax+c\)<br>
+⇔\(y=a(x^+2x)+c\)<br>
+
+このような式変形は簡単です。<br>
+このとき、次のようなことを思った方がいませんか？<br>
+
+\(a(x^+2x)の部分が、\(a(x^+2x+1)\)になれば、\(a(x+1)^2\)、に出来るのになぁ<br>
+
+では、\(ax^2+2ax\)、を、\(a(x^+2x+1)\)、の形にするために足りない値は何でしょう。<br>
+\(a(x^+2x+1)\)を展開すればすぐにわかりますよね。<br>
+答えは「a」です。<br>
+足りない値も無事分かったところで、Aに足しちゃいましょうか。<br>
+それが出来たら苦労しないよ、と思ったかもしれませんが、<br>
+等式の性質上、Aの両辺に足してしまえば何も問題ないですよね？<br>
+Aは二次関数を表す式ですが、その前に等式であることを見失ってはいけません。<br>
+やってみましょう。<br>
+
+　\(y=ax^2+2ax+c\)<br>
+⇔\(y+a=ax^2+2ax+c+a\)<br>
+⇔\(y+a=a(x^+2x+1)+c\)<br>
+⇔\(y=a(x+1)^2+c-a\)<br>
+⇔\(y=a{x-(-1)}^2+c-a…⑦\)<br>
+
+⑦の式と、⑤の式を見比べれば、<br>
+
+p=-1<br>
+q=c-a<br>
+
+上記のようになるのはすぐにわかると思います。<br>
+よってAの二次関数の頂点は、点(-1,c-a)<br>
+軸は、x=-1<br>
+
+ここまでのことが、しっかり理解出来れば、<br>
+座標平面上に、二次関数の頂点を点(0,0)から動かしても<br>
+式で表せることが出来るようになりました。<br>
+
+比例から、一次関数へと範囲を広げたときは、<br>
+y軸と、一次関数の交わる点を重点的にみて、考えましたが<br>
+放物線から、二次関数の場合は、より自由度が高くなったと感じたと思いますし、<br>
+最初は⑤のような形で、二次関数の式を表しても、<br>
+頂点がすぐ分かると言われても実感がないかもしれません。<br>
+そういった人は、(p,q)へ色んな具体例をどんどん入れていって<br>
+グラフを自分の手を動かして描いてみましょう。<br>
+何度もやっていけば、当然慣れてきて、<br>
+その頃に、もう一度今の説明を読んだとき、より簡単に、より深く理解出来るはずです。<br>
+数学で理解しにくいことが、出てきたときは、まずは具体例をたくさん考えてみて、少しずつ理解していきましょう。<br>
+
+
+    </div>
+  </div>
+
+  <div id="cover"></div>
+
+<!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-2.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">二次関数とグラフ</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentText"><a href="#" class="css_btn_class">教程を見る</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程 終わり -->
+
+
+<section class="contentsWorks">
+
+  <section class="works">
+    <p>(1)</p>
+
+    </section>
+  <section class="works">
+    <p>(2)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+  <section class="works">
+    <p>(3)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+  <section class="works">
+    <p>(4)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+  <section class="works">
+    <p>(5)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+
+</section>
+
+
+<div class="tile-container">
+  <div class="tile css_btn_class" data-cta-target=".js-modal-1">解説を見る</div>
+</div>
+
+
+
+      <div class="js-modal-1 modal modal--1">
+          <span class="modal-close-btn"></span>
+    			<h1>解説ページ</h1>
+          <p>(1)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(2)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(3)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(4)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(5)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(6)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(7)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="../../../js/popup.js"></script>
+  <script src="../../../js/cta.js"></script>
+  <script>
+  var closeFn;
+  function closeShowingModal() {
+    var showingModal = document.querySelector('.modal.show');
+    if (!showingModal) return;
+    showingModal.classList.remove('show');
+    document.body.classList.remove('disable-mouse');
+    document.body.classList.remove('disable-scroll');
+    if (closeFn) {
+      closeFn();
+      closeFn = null;
+    }
+  }
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+    if (target.dataset.ctaTarget) {
+      closeFn = cta(target, document.querySelector(target.dataset.ctaTarget), { relativeToWindow: true }, function showModal(modal) {
+        modal.classList.add('show');
+        document.body.classList.add('disable-mouse');
+        if(target.dataset.disableScroll){
+          document.body.classList.add('disable-scroll');
+        }
+      });
+    }
+    else if (target.classList.contains('modal-close-btn')) {
+      closeShowingModal();
+    }
+  });
+  document.addEventListener('keyup', function (e) {
+    if (e.which === 27) {
+      closeShowingModal();
+    }
+  })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,321 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	width: 100%;
+}
+
+
+header .headerTitle {
+  width: 100%;
+	height: 10%;
+	vertical-align: middle;
+}
+
+.headerNav a{
+	text-decoration: none;
+	color: white;
+}
+.titleCopy {
+  color: white;
+	font-size: 250%;
+  font-weight: bold;
+	text-align: center;
+}
+
+.headCopy {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+}
+
+.storeFrame {
+	border: 0.03px #ddd dotted;
+	margin-bottom: 3%;
+}
+
+
+.thumbnail {
+  border: none;
+	text-align: center;
+	padding-left: 3%;
+
+}
+
+.storeSentence {
+	text-align: center;
+	margin-bottom: 4%;
+}
+
+.storePhoto img {
+}
+.storeName1 {
+	position: absolute;
+	color: #fff;
+	z-index: 10;
+	text-align: center;
+	padding-top: 10%;
+
+	font-size: 200%;
+
+}
+.storeName2 {
+	position: absolute;
+	color: #fff;
+	z-index: 10;
+	padding-top: 15%;
+	text-align: center;
+
+	font-size: 600%;
+
+}
+ .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	opacity: 0.3;
+}
+.headerNav {
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	color: white;
+	width: device-width;
+	z-index: 100;
+	text-align: center;
+}
+.headerNav ul{
+		padding-top: 1%;
+}
+.headerNav ul li  {
+	display: inline;
+	font-size: 150%;
+	margin-left: 5%;
+
+}
+
+.changeMessage p {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: center;
+	font-size: 300%;
+	text-shadow: 3px 3px 3px #999;
+}
+.goodsPhoto  img {
+	height: 300px;
+	box-shadow: 3px 3px 3px 1px #aaa;
+}
+.goodsPhoto p {
+	font-size: 120%;
+}
+.border {
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 100%;
+}
+.borderThin {
+	opacity: 0.5;
+	text-align: center;
+	margin-top: 3%;
+	margin-bottom: 5%;
+	font-weight: 400;
+	font-size: 200%;
+}
+
+.foodHead {
+	text-align: center;
+	font-size: 150%;
+	margin-bottom: 10%;
+	font-weight: bold;
+}
+.food {
+	border-right: 0.2px solid #ddd;
+
+}
+.food ul li {
+	text-align: center;
+	list-style: none;
+	margin-bottom: 3%;
+}
+
+.drink .drinkHead {
+	text-align: center;
+	font-size: 150%;
+	margin-bottom: 10%;
+	font-weight: bold;
+}
+
+.drink li {
+	text-align: center;
+	list-style: none;
+	margin-bottom: 3%;
+}
+.drink .caution {
+	text-align: center;
+	padding-top: 10%;
+	opacity: 0.8;
+}
+.photoGallery img {
+	box-shadow: 3px 3px 3px #777;
+}
+#largeImage img {
+	width: 70%;
+	display: none;
+
+}
+
+#btn {
+	text-align: center;
+}
+#btn button {
+	box-shadow: 5px 5px 3px #444;
+
+}
+#btn a {
+	text-decoration: none;
+	color: white;
+}
+
+.storeInformation .informationText {
+	text-align: center;
+}
+.storeInformation .storeName {
+	font-size: 150%;
+	font-weight: 800;
+	margin-bottom: 5%;
+}
+.informationText ul li {
+	list-style: none;
+	margin-bottom: 3%;
+}
+.informationText ul li:first-child{
+	color: #777;
+}
+.informationText address a {
+	text-decoration: none;
+	font-size: 120%;
+	color: #000;
+	font-weight: 800;
+	margin-top: 20%;
+
+}
+.map {
+	text-align: center;
+}
+#map {
+	width: 100%;
+	height: 80vh;
+	box-shadow: 10px 8px 5px #999;
+}
+h3.map_title{
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+
+
+  font-size: 150%;
+
+}
+
+p.map_comment{
+
+	color: #000;
+  text-align: center;
+  font-weight: bold;
+
+  font-size: 200%;
+}
+footer {
+	width: 100%;
+	height: 20vh;
+}
+footer .unicook {
+	color: #333;
+	text-align: center;
+	font-size: 300%;
+	vertical-align: middle;
+	padding-top: 2%;
+	text-shadow: 2px 2px 2px #bbb;
+}
+footer .company {
+	text-align: center;
+}
+.uniCouponImage {
+	text-align: center;
+}
+
+.uniCouponImage img {
+	width: 80%;
+	box-shadow: 6px 6px 6px #444;
+
+}
+.uniCouponText {
+	text-align: center;
+}
+
+.uniCouponText .menuTitle {
+	font-weight: 800;
+	font-size: 120%;
+}
+
+.uniCouponText p{
+	margin-bottom: 10%;
+}
+.uniCouponText ul li {
+	list-style: none;
+	margin-bottom: 5%;
+}
+
+.couponPrice b {
+	font-size: 150%;
+	color: #0cf;
+
+}
+
+#cover {
+	background-color: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	display: none;
+	z-index: 120;
+}
+
+#uniCoupon {
+	position: absolute;
+	display: none;
+	z-index: 130;
+	width: 70%;
+	background-color: #fff;
+}
+
+.photoGallery a {
+
+}
+
+
+.footerNav {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	height: 10vh;
+	background-color: rgba(0, 204, 255, 1);
+
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>sonovy | ソノビー　高校数学l 数と集合　実数</title>
+<link href="../../../css/phone.css" rel="stylesheet">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- swiper.jsの導入 -->
+<script src="../../../js/jquery-1.10.2.min.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+  	<div class="curriculum">
+      <!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-2.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">鋭角の三角比</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentWork"><a href="#" class="css_btn_class">問題を解く</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程　end -->
+
+  <div class="contentsWorks">
+    これはある学校で行われた、10点満点の英語の単語書き取りテストの結果です。わかりやすくまとめるためにこのデータを大きい点数のものから順に並べてみましょう。<br>
+    さて、ではこの時テストの「平均値」を求めてみましょう。「平均値」とは値の総和から値の個数を割ったものを言います。今回の例では<br>
+
+    \(\begin{equation}\)<br>
+    \(\bar{x}=\dfrac{1+1+1+2+2+3+4+5+9+10+10+10}{12}=4.83\)<br>
+    \(\end{equation}\)<br>
+
+    となるので平均値は4.83だとわかります。似たような意味を持つ言葉で「中央値」というものもあります。これはデータの値の個数の平均にあたる値の事を言います。<br>
+    今回の例では1個から12個数字が並んでいるので、平均は<br>
+
+    \(\begin{equation}\)<br>
+    \(\bar{x}=\dfrac{1+12}{2}=6.5\)<br>
+    \end{equation}<br><br>
+
+    となり、6.5個目のデータの値が中央値となります。ただし6.5個目は存在しないので、このようなケースであれば6個目と7個目の値の平均を中央値とします。<br>
+    すなわち中央値は<br>
+
+    \(\begin{equation}\)<br>
+    \(\bar{x}=\dfrac{3+4}{2}=3.5\)<br>
+    \(\end{equation}<br>
+
+    となります。じつはこのデータをさらに細かく分類することが出来ます。<br>
+
+    <img src="../../../img/4-1-3.png"><br>
+
+    この中央値を堺にデータを区分した時、最小値を含むデータの集合の中央値を第1四分位数、全体のデータの集合の中央値を第2四分位数、最大値を含むデータの集合の中央値を第3四分位数といいます。<br>
+
+    四分位数を用いてデータ分布を表すときは「箱ひげ図」という図を用います。データの最大値から最小値を引いた値を「範囲」、第3四分位数から第1四分位数を引いた値を「四分位範囲」、そして四分位範囲を2で割った値を「四分位偏差」といいます。<br>
+
+    さて次にデータの散らばり具合について数学的に考えてみましょう。ここに$n$個のデータ<br>
+    \(\begin{equation}\)<br>
+    \(x_1,x_2, \cdots ,x_n\)<br>
+    \(\end{equation}<br>
+    があるとします。<br>
+    平均値を\(\overline{x}\)とすると、それぞれのデータのばらつき具合はその平均値との差で表すことができます。式で表すとこのようになります。<br>
+    \(\begin{equation}<br>
+    \(x_1-\overline{x},x_2-\overline{x}, \cdots ,x_n-\overline{x}\)<br>
+    \(\end{equation}<br>
+    この平均からずれた値のことを「偏差」と呼びます。<br>
+    「偏差」の状態のままで足し合わせるとその\(n$個のデータのばらつきが調べられそうですね。ただこのまま足したのでは正確な値が取れません。なぜならこの「偏差」はプラスもマイナスもとり得るから。<br>
+    なのでいったん各偏差を二乗します。こうすることで各項が必ずプラスになります。それらの値の平均値をだせばそのデータのバラツキ具合というものを測ることができます。<br>
+    \(\begin{equation}\)<br>
+    \(\dfrac{1}{n}\left((x_1-\overline{x})^2+(x_2-\overline{x})^2+ \cdots +(x_n-\overline{x})^2\right)\)<br>
+    \(\end{equation}\)<br>
+    一般にこれを「分散」と呼びます。ただしこのままでは各データを二乗しているため、単位がデータの値を異なります。それを分散の平方根をとることで解消してあげます。<br>
+    \(\begin{equation}\)<br>
+    \(\sqrt{\dfrac{1}{n}\left((x_1-\overline{x})^2+(x_2-\overline{x})^2+ \cdots +(x_n-\overline{x})^2\right)}\)<br>
+    \(\end{equation}\)<br>
+    これを一般に「標準偏差」と呼びます。<br>
+
+
+
+ </div>
+  </div>
+
+  <div id="cover"></div>
+
+<!-- ヘッダー教程 -->
+<div class="container">
+  <div class="row">
+      <section class="headerWorks">
+        <div class="headerContents">
+          <div class="col-xs-4">
+          <img src="../../../img/sonovy-2.png">
+        </div>
+        <div class="col-xs-4">
+        <p class="titleWorks">鋭角の三角比</p>
+      </div>
+        <div class="col-xs-4">
+        <div class="presentText"><a href="#" class="css_btn_class">教程を見る</a></div>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ヘッダー教程 終わり -->
+
+
+<section class="contentsWorks">
+
+  <section class="works">
+    <p>(1)</p>
+
+    </section>
+  <section class="works">
+    <p>(2)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+  <section class="works">
+    <p>(3)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+  <section class="works">
+    <p>(4)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+  <section class="works">
+    <p>(5)</p>
+              Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+  </section>
+
+</section>
+
+
+<div class="tile-container">
+  <div class="tile css_btn_class" data-cta-target=".js-modal-1">解説を見る</div>
+</div>
+
+
+
+      <div class="js-modal-1 modal modal--1">
+          <span class="modal-close-btn"></span>
+    			<h1>解説ページ</h1>
+          <p>(1)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(2)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(3)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(4)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(5)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(6)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+          <p>(7)</p>
+          Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="../../../js/popup.js"></script>
+  <script src="../../../js/cta.js"></script>
+  <script>
+  var closeFn;
+  function closeShowingModal() {
+    var showingModal = document.querySelector('.modal.show');
+    if (!showingModal) return;
+    showingModal.classList.remove('show');
+    document.body.classList.remove('disable-mouse');
+    document.body.classList.remove('disable-scroll');
+    if (closeFn) {
+      closeFn();
+      closeFn = null;
+    }
+  }
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+    if (target.dataset.ctaTarget) {
+      closeFn = cta(target, document.querySelector(target.dataset.ctaTarget), { relativeToWindow: true }, function showModal(modal) {
+        modal.classList.add('show');
+        document.body.classList.add('disable-mouse');
+        if(target.dataset.disableScroll){
+          document.body.classList.add('disable-scroll');
+        }
+      });
+    }
+    else if (target.classList.contains('modal-close-btn')) {
+      closeShowingModal();
+    }
+  });
+  document.addEventListener('keyup', function (e) {
+    if (e.which === 27) {
+      closeShowingModal();
+    }
+  })
+  </script>
+
+</body>
+</html>
